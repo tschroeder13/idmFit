@@ -1,0 +1,45 @@
+!1 Hübner AD Treiber
+!contents -R2 -g -p -f -h
+
+!2 Variablen
+Der User Container im eDir
+!define meta_ou {ou=User,ou=BR,o=HUEBNER}
+Der User Container im AD
+!define ad_ou {OU=USER,OU=BR,OU=User,OU=HUB,DC=2k12,DC=tsc}
+Der User im eDir
+!define metauser {cn=jpublic,ou=User,ou=BR,o=HUEBNER}
+Der umbenannte User im eDir
+!define metauser_ren {cn=jpub,ou=User,ou=BR,o=HUEBNER}
+Der Ziel Container im eDir
+!define meta_mov_target {ou=User,ou=EU,o=HUEBNER}
+Der verschobene User im eDir
+!define metauser_mov {cn=jpub,${meta_mov_target}}
+Der User im AD
+!define aduser {CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc}
+Der umbenannte User im AD
+!define aduser_ren {CN=jpub,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc}
+Der Ziel Container im AD
+!define ad_mov_target {ou=User,OU=EU,ou=User,ou=HUB,DC=2k12,DC=tsc}
+Der verschobene User im AD
+!define aduser_mov {CN=jpub,${ad_mov_target}}
+Die Universal Password Policy
+!define pwpolicy {cn=Sample Password Policy,cn=Password Policies,cn=Security}
+Die AD Berechtigungs-Gruppe
+!define adsync_grp {cn=aduser,ou=adsync,ou=dienste,o=huebner}
+Die Gruppe im eDir Scope
+!define scoped_meta_group {cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner}
+Die Gruppe im AD Scope
+!define scoped_ad_group {CN=citrone,OU=GROUPS,DC=2k12,DC=tsc}
+Die Gruppe nicht im eDir Scope
+!define unscoped_meta_group {cn=peaches,OU=USER,OU=EU,o=HUEBNER}
+Die Gruppe nicht im AD Scope
+!define unscoped_ad_group {cn=peaches,OU=USER,OU=EU,ou=User,ou=HUB,DC=2k12,DC=tsc}
+Der eDir Gruppen Container
+!define meta_grp_ou {ou=GROUPS,ou=ADsync,ou=DIENSTE,o=HUEBNER}
+Der AD Gruppen Container
+!define ad_grp_ou {OU=GROUPS,DC=2k12,DC=tsc}
+Die eDir root
+!define meta_root {o=HUEBNER}
+Die AD root
+!define ad_root {DC=2k12,DC=tsc}
+

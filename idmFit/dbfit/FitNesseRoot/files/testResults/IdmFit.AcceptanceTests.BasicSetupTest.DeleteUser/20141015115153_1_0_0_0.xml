@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFit.AcceptanceTests.BasicSetupTest.DeleteUser</rootPath>
+    <result>
+    <counts>
+      <right>3</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>95</runTimeInMillis>
+    <content>&lt;br/&gt;Wenn der User im eDirectory gelöscht wird&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;delete object;&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;cn=jpublic,ou=MI,ou=VM,ou=V,o=STW&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object exists;&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=MI,ou=VM,ou=V,o=STW&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;wird er auch im AD gelöscht&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object exists;&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=MI,ou=VM,ou=V,ou=STW,dc=2k12,dc=tsc&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>DeleteUser</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_1', instruction='call', instanceName='scriptTableActor', methodName='deleteObject', args=[cn=jpublic,ou=MI,ou=VM,ou=V,o=STW]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_2', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[cn=jpublic,ou=MI,ou=VM,ou=V,o=STW]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[cn=jpublic,ou=MI,ou=VM,ou=V,ou=STW,dc=2k12,dc=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+      <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>95</totalRunTimeInMillis>
+  
+</testResults>
+

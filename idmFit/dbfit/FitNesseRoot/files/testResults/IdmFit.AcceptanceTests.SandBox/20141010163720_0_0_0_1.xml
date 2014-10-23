@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFit.AcceptanceTests.SandBox</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>9</exceptions>
+    </counts>
+    <runTimeInMillis>62</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;setUp&lt;/p&gt;
+	&lt;div&gt;&lt;span class="meta"&gt;classpath: "C:/Users/tschroet/MyPrograms/luna/workspace/guhFitNesse/bin"&lt;/span&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;idmfit&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;table&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td colspan="4" class="error"&gt;Sandbox&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: groovy/lang/GroovyObject
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_65]
+	at java.lang.ClassLoader.defineClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader.defineClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader.access$100(Unknown Source) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader$1.run(Unknown Source) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader$1.run(Unknown Source) [rt.jar:1.7.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader.findClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.ClassLoader.loadClass(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.ClassLoader.loadClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.7.0_65]
+	at java.lang.Class.forName(Unknown Source) [rt.jar:1.7.0_65]
+	at fitnesse.slim.SlimExecutionContext.getClass(SlimExecutionContext.java:139) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimExecutionContext.searchPathsForClass(SlimExecutionContext.java:129) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimExecutionContext.createInstanceOfConstructor(SlimExecutionContext.java:100) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:42) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:75) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:83) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:106) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:93) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:164) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:134) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:51) [fitnesse-standalone.jar]
+Caused by: java.lang.ClassNotFoundException: groovy.lang.GroovyObject
+	at java.net.URLClassLoader$1.run(Unknown Source) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader$1.run(Unknown Source) [rt.jar:1.7.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader.findClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.ClassLoader.loadClass(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.ClassLoader.loadClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_65]
+	at java.lang.ClassLoader.defineClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader.defineClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader.access$100(Unknown Source) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader$1.run(Unknown Source) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader$1.run(Unknown Source) [rt.jar:1.7.0_65]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.7.0_65]
+	at java.net.URLClassLoader.findClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.ClassLoader.loadClass(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.ClassLoader.loadClass(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.7.0_65]
+	at java.lang.Class.forName(Unknown Source) [rt.jar:1.7.0_65]
+	at fitnesse.slim.SlimExecutionContext.getClass(SlimExecutionContext.java:139) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimExecutionContext.searchPathsForClass(SlimExecutionContext.java:129) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimExecutionContext.createInstanceOfConstructor(SlimExecutionContext.java:100) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:42) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:75) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:83) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:106) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:93) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:164) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:134) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:51) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;bauer&lt;/td&gt;
+		&lt;td&gt;birnen&lt;/td&gt;
+		&lt;td&gt;wurmstichig&lt;/td&gt;
+		&lt;td&gt;fasse zusammen?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Meyer &lt;span class="error"&gt;The instance decisionTable_1.setBauer. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;12 &lt;span class="error"&gt;The instance decisionTable_1.setBirnen. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;true &lt;span class="error"&gt;The instance decisionTable_1.setWurmstichig. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt; &lt;span class="error"&gt;The instance decisionTable_1.fasseZusammen. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Huber &lt;span class="error"&gt;The instance decisionTable_1.setBauer. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;45 &lt;span class="error"&gt;The instance decisionTable_1.setBirnen. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;false &lt;span class="error"&gt;The instance decisionTable_1.setWurmstichig. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt; &lt;span class="error"&gt;The instance decisionTable_1.fasseZusammen. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SandBox</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='fitnesse.fixtures'}</instruction>
+        <slimResult>pass(fitnesse.fixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='idmfit'}</instruction>
+        <slimResult>pass(idmfit)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>idmfit</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='Sandbox', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setBauer', args=[Meyer]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setBauer. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setBirnen', args=[12]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_5</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setBirnen. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setWurmstichig', args=[true]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_6</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setWurmstichig. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='fasseZusammen', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.fasseZusammen. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setBauer', args=[Huber]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_10</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setBauer. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setBirnen', args=[45]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_11</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setBirnen. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setWurmstichig', args=[false]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_12</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.setWurmstichig. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='fasseZusammen', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_1.fasseZusammen. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+      <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>62</totalRunTimeInMillis>
+  
+</testResults>
+

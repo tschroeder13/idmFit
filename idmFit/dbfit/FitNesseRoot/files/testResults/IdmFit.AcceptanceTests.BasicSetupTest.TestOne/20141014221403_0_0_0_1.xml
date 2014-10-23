@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFit.AcceptanceTests.BasicSetupTest.TestOne</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>56</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;create object&lt;/td&gt;
+		&lt;td class="error"&gt;cn=jpublic,ou=MI,ou=VM,ou=V,o=STW&lt;/td&gt;
+		&lt;td class="error"&gt;with class&lt;/td&gt;
+		&lt;td class="error"&gt;inetOrgPerson&lt;/td&gt;
+		&lt;td class="error"&gt;and attributes&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;sn&lt;/td&gt;
+		&lt;td class="hash_value"&gt;"Public"&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;givenName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;"Joe"&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="6"&gt;&lt;pre&gt;__EXCEPTION__:com.novell.ldapchai.exception.ChaiOperationException: [LDAP: error code 68 - NDS error: entry already exists (-606)]
+	at com.novell.ldapchai.exception.ChaiOperationException.forErrorMessage(ChaiOperationException.java:39) [ldapChai.jar]
+	at com.novell.ldapchai.provider.JNDIProviderImpl.convertNamingException(JNDIProviderImpl.java:1002) [ldapChai.jar]
+	at com.novell.ldapchai.provider.JNDIProviderImpl.createEntry(JNDIProviderImpl.java:277) [ldapChai.jar]
+	at com.novell.ldapchai.provider.JNDIProviderImpl.createEntry(JNDIProviderImpl.java:247) [ldapChai.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.AbstractWrapper.invoker(AbstractWrapper.java:80) [ldapChai.jar]
+	at com.novell.ldapchai.provider.FailOverWrapper.failOverInvoke(FailOverWrapper.java:173) [ldapChai.jar]
+	at com.novell.ldapchai.provider.FailOverWrapper.invoke(FailOverWrapper.java:134) [ldapChai.jar]
+	at com.sun.proxy.$Proxy3.createEntry(Unknown Source) [rt.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.AbstractWrapper.invoker(AbstractWrapper.java:80) [ldapChai.jar]
+	at com.novell.ldapchai.provider.WatchdogWrapper.invoke(WatchdogWrapper.java:219) [ldapChai.jar]
+	at com.sun.proxy.$Proxy3.createEntry(Unknown Source) [rt.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.StatisticsWrapper.invoke(StatisticsWrapper.java:121) [ldapChai.jar]
+	at com.sun.proxy.$Proxy3.createEntry(Unknown Source) [rt.jar]
+	at com.novell.ldapchai.provider.ChaiProvider$createEntry$0.call(Unknown Source) [n/a]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:124) [groovy-all-2.3.6.jar:2.3.6]
+	at idmfit.LdapOperationScript.createObjectWithClassAndAttributes(LdapOperationScript.groovy:21) [file:/C:/Users/tschroet/MyPrograms/luna/workspace/guhFitNesse/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:121) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:99) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:83) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:106) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:93) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:164) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:134) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:51) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;object exists&lt;/td&gt;
+		&lt;td colspan="4"&gt;cn=jpublic,ou=MI,ou=VM,ou=V,o=STW &lt;span class="error"&gt;Method objectExists[0] not found in idmfit.LdapOperationScript.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;irgendwas solte passieren&lt;br/&gt;</content>
+    <relativePageName>TestOne</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_1', instruction='call', instanceName='scriptTableActor', methodName='createObjectWithClassAndAttributes', args=[cn=jpublic,ou=MI,ou=VM,ou=V,o=STW, inetOrgPerson, &lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;sn&lt;/td&gt;
+		&lt;td class="hash_value"&gt;"Public"&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;givenName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;"Joe"&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_2', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_2</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Method objectExists[0] not found in idmfit.LdapOperationScript.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+      <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>56</totalRunTimeInMillis>
+  
+</testResults>
+

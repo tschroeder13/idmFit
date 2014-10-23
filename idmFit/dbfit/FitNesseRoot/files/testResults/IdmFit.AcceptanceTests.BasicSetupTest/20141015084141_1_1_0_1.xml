@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFit.AcceptanceTests.BasicSetupTest</rootPath>
+    <pageHistoryReference>
+    <name>IdmFit.AcceptanceTests.BasicSetupTest.SuiteSetUp</name>
+    <date>10/15/2014 08:41:41</date>
+    <pageHistoryLink>IdmFit.AcceptanceTests.BasicSetupTest.SuiteSetUp?pageHistory&amp;resultDate=20141015084141</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5749</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>IdmFit.AcceptanceTests.BasicSetupTest.TestOne</name>
+    <date>10/15/2014 08:41:46</date>
+    <pageHistoryLink>IdmFit.AcceptanceTests.BasicSetupTest.TestOne?pageHistory&amp;resultDate=20141015084146</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>83001</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>IdmFit.AcceptanceTests.BasicSetupTest.SuiteTearDown</name>
+    <date>10/15/2014 08:43:09</date>
+    <pageHistoryLink>IdmFit.AcceptanceTests.BasicSetupTest.SuiteTearDown?pageHistory&amp;resultDate=20141015084309</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>79</runTimeInMillis>
+  </pageHistoryReference>
+    <finalCounts>
+    <right>1</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>98439</totalRunTimeInMillis>
+
+</suiteResults>
+

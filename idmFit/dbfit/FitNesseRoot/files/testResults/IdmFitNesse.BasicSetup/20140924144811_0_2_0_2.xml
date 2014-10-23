@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFitNesse.BasicSetup</rootPath>
+    <pageHistoryReference>
+    <name>IdmFitNesse.BasicSetup.ConnectionSetup</name>
+    <date>09/24/2014 14:48:14</date>
+    <pageHistoryLink>IdmFitNesse.BasicSetup.ConnectionSetup?pageHistory&amp;resultDate=20140924144814</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>29</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>IdmFitNesse.BasicSetup.ConnectionState</name>
+    <date>09/24/2014 14:48:14</date>
+    <pageHistoryLink>IdmFitNesse.BasicSetup.ConnectionState?pageHistory&amp;resultDate=20140924144814</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>3</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>IdmFitNesse.BasicSetup.IsDisconnected</name>
+    <date>09/24/2014 14:48:14</date>
+    <pageHistoryLink>IdmFitNesse.BasicSetup.IsDisconnected?pageHistory&amp;resultDate=20140924144814</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>IdmFitNesse.BasicSetup.TearDownLdapConnections</name>
+    <date>09/24/2014 14:48:14</date>
+    <pageHistoryLink>IdmFitNesse.BasicSetup.TearDownLdapConnections?pageHistory&amp;resultDate=20140924144814</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>4</runTimeInMillis>
+  </pageHistoryReference>
+    <finalCounts>
+    <right>0</right>
+    <wrong>2</wrong>
+    <ignores>0</ignores>
+    <exceptions>2</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>4013</totalRunTimeInMillis>
+
+</suiteResults>
+

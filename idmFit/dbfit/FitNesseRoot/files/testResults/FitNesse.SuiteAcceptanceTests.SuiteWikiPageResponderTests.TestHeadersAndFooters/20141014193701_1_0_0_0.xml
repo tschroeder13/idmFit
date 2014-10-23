@@ -1,0 +1,706 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteWikiPageResponderTests.TestHeadersAndFooters</rootPath>
+    <result>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>52</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;fitnesse.fixtures&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SetUp&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;h2&gt;This page tests PageHeader and PageFooter&lt;/h2&gt;
+&lt;ul&gt;
+	&lt;li&gt;The contents of the PageHeader should appear at the start of every page.  Likewise the contents of PageFooter should appear at the end of every page.&lt;/li&gt;
+	&lt;li&gt;Sub pages inherit the headers and footers of their parent, unless they have PageHeader and PageFooter siblings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Test normal header and footer without sub pages.&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;First create a normal page, plus header and footer pages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;Page creator.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Page name.&lt;/td&gt;
+		&lt;td&gt;Page contents.&lt;/td&gt;
+		&lt;td&gt;Page attributes.&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;NormalPage&lt;/td&gt;
+		&lt;td&gt;normal&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;blank&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;PageHeader&lt;/td&gt;
+		&lt;td&gt;header&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;blank&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;PageFooter&lt;/td&gt;
+		&lt;td&gt;footer&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;blank&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Then request the normal page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;Response Requester.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;NormalPage&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Ensure that the header and and footer text appear in the normal page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;Response Examiner.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+		&lt;td&gt;wrapped html?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;(header).*(normal).*(footer)&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;&lt;pre&gt;HTTP/1.1 200 OK
+Content-Length: 6079
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+  &amp;lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&amp;gt;
+  &amp;lt;title&amp;gt;NormalPage&amp;lt;/title&amp;gt;
+    &amp;lt;!--[if lt IE 9]&amp;gt;
+   &amp;lt;script&amp;gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &amp;lt;/script&amp;gt;
+  &amp;lt;![endif]--&amp;gt;
+  
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_wiki.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_pages.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_straight.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/question.mark/question.mark.css" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.base" href="/" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/editor.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="shortcut icon" type="image/png" href="/files/fitnesse/images/favicon.png" /&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/jquery-1.7.2.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse_straight.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body class="wikiPage"&amp;gt;
+
+  &amp;lt;header&amp;gt;
+   &amp;lt;a href="/FrontPage" id="art_niche"&amp;gt;&amp;lt;span&amp;gt;FitNesse&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h1&amp;gt;NormalPage&amp;lt;/h1&amp;gt;
+
+
+
+  &amp;lt;/header&amp;gt;
+  
+    
+  &amp;lt;nav&amp;gt;
+   &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage?edit" accesskey="e"&amp;gt;Edit&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   
+  &amp;lt;li id="add" aria-haspopup="true"&amp;gt;&amp;lt;a href="NormalPage?new" class="label"&amp;gt;Add&amp;lt;/a&amp;gt;
+  &amp;lt;ul&amp;gt;
+     &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+  
+ &amp;lt;li id="tools" aria-haspopup="true"&amp;gt;&amp;lt;a href="#" class="label"&amp;gt;Tools&amp;lt;/a&amp;gt;
+      &amp;lt;ul&amp;gt;
+     &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage?properties" accesskey="p"&amp;gt;Properties&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage?whereUsed" accesskey="w"&amp;gt;Where Used&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage?versions" accesskey="v"&amp;gt;Versions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="NormalPage?refactor&amp;amp;amp;type=rename"&amp;gt;Rename&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage?refactor&amp;amp;amp;type=move"&amp;gt;Move&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage?refactor&amp;amp;amp;type=replace"&amp;gt;Replace&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage?deletePage"&amp;gt;Delete&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li  class="divider"&amp;gt;&amp;lt;a href="/files" accesskey="f"&amp;gt;Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="?searchForm" accesskey="s"&amp;gt;Search&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="/RecentChanges" accesskey=""&amp;gt;Recent Changes&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  
+      
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="/FitNesse.UserGuide" accesskey=""&amp;gt;User Guide&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+  &amp;lt;/nav&amp;gt;
+  
+  &amp;lt;article&amp;gt;
+   headernormal
+
+&amp;lt;div id="helpUnderlay" class="help-underlay"&amp;gt;
+    &amp;lt;div id="helpModal" class="help-modal"&amp;gt;
+        &amp;lt;h1&amp;gt;Keyboard Shortcuts &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;&amp;lt;/h1&amp;gt;
+        &amp;lt;div id="helpClose" class="help-close"&amp;gt;&amp;amp;times;&amp;lt;/div&amp;gt;
+        &amp;lt;div id="helpModalContent" class="help-modal-content"&amp;gt;
+            &amp;lt;div id="helpListWrap" class="help-list-wrap"&amp;gt;
+                &amp;lt;ul class="help-list"&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;t&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Test&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;e&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Edit page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Add new page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;p&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Properties&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;w&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Where used?&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Focus on search bar&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;s&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Open search page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;g&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;u&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Go to User Guide&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script src="/files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src="/files/fitnesse/question.mark/question.mark.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script type="text/javascript"&amp;gt;
+
+  
+        Mousetrap.bind('e', function() { window.location.href ="NormalPage?edit"; });
+        Mousetrap.bind('a', function() { window.location.href ="NormalPage?new"; });
+        Mousetrap.bind('p', function() { window.location.href ="NormalPage?properties"; });
+        Mousetrap.bind('w', function() { window.location.href ="NormalPage?whereUsed"; });
+        Mousetrap.bind('v', function() { window.location.href ="NormalPage?versions"; });
+        Mousetrap.bind('s', function() { window.location.href ="NormalPage?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+        Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+  
+&amp;lt;/script&amp;gt;
+
+  &amp;lt;/article&amp;gt;
+  
+    &amp;lt;footer&amp;gt;
+   footer  &amp;lt;/footer&amp;gt;
+  
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr/&gt;
+&lt;br/&gt;&lt;h3&gt;Test that sub pages inherit headers and footers.&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;Create a sub page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;Page creator.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Page name.&lt;/td&gt;
+		&lt;td&gt;Page contents.&lt;/td&gt;
+		&lt;td&gt;Page attributes.&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;NormalPage.SubPage&lt;/td&gt;
+		&lt;td&gt;sub page&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;blank&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Then request the Sub page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;Response Requester.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;NormalPage.SubPage&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Ensure that the header and and footer text are inherited by the sub page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;Response Examiner.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+		&lt;td&gt;wrapped html?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;(header).*(sub page).*(footer)&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;&lt;pre&gt;HTTP/1.1 200 OK
+Content-Length: 6253
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+  &amp;lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&amp;gt;
+  &amp;lt;title&amp;gt;NormalPage.SubPage&amp;lt;/title&amp;gt;
+    &amp;lt;!--[if lt IE 9]&amp;gt;
+   &amp;lt;script&amp;gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &amp;lt;/script&amp;gt;
+  &amp;lt;![endif]--&amp;gt;
+  
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_wiki.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_pages.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_straight.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/question.mark/question.mark.css" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.base" href="/" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/editor.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="shortcut icon" type="image/png" href="/files/fitnesse/images/favicon.png" /&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/jquery-1.7.2.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse_straight.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body class="wikiPage"&amp;gt;
+
+  &amp;lt;header&amp;gt;
+   &amp;lt;a href="/FrontPage" id="art_niche"&amp;gt;&amp;lt;span&amp;gt;FitNesse&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+ &amp;lt;li&amp;gt;&amp;lt;a href="/NormalPage"&amp;gt;NormalPage&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h1&amp;gt;SubPage&amp;lt;/h1&amp;gt;
+
+
+
+  &amp;lt;/header&amp;gt;
+  
+    
+  &amp;lt;nav&amp;gt;
+   &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?edit" accesskey="e"&amp;gt;Edit&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   
+  &amp;lt;li id="add" aria-haspopup="true"&amp;gt;&amp;lt;a href="NormalPage.SubPage?new" class="label"&amp;gt;Add&amp;lt;/a&amp;gt;
+  &amp;lt;ul&amp;gt;
+     &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+  
+ &amp;lt;li id="tools" aria-haspopup="true"&amp;gt;&amp;lt;a href="#" class="label"&amp;gt;Tools&amp;lt;/a&amp;gt;
+      &amp;lt;ul&amp;gt;
+     &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?properties" accesskey="p"&amp;gt;Properties&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?whereUsed" accesskey="w"&amp;gt;Where Used&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?versions" accesskey="v"&amp;gt;Versions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="NormalPage.SubPage?refactor&amp;amp;amp;type=rename"&amp;gt;Rename&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?refactor&amp;amp;amp;type=move"&amp;gt;Move&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?refactor&amp;amp;amp;type=replace"&amp;gt;Replace&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?deletePage"&amp;gt;Delete&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li  class="divider"&amp;gt;&amp;lt;a href="/files" accesskey="f"&amp;gt;Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="?searchForm" accesskey="s"&amp;gt;Search&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="/RecentChanges" accesskey=""&amp;gt;Recent Changes&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  
+      
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="/FitNesse.UserGuide" accesskey=""&amp;gt;User Guide&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+  &amp;lt;/nav&amp;gt;
+  
+  &amp;lt;article&amp;gt;
+   headersub page
+
+&amp;lt;div id="helpUnderlay" class="help-underlay"&amp;gt;
+    &amp;lt;div id="helpModal" class="help-modal"&amp;gt;
+        &amp;lt;h1&amp;gt;Keyboard Shortcuts &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;&amp;lt;/h1&amp;gt;
+        &amp;lt;div id="helpClose" class="help-close"&amp;gt;&amp;amp;times;&amp;lt;/div&amp;gt;
+        &amp;lt;div id="helpModalContent" class="help-modal-content"&amp;gt;
+            &amp;lt;div id="helpListWrap" class="help-list-wrap"&amp;gt;
+                &amp;lt;ul class="help-list"&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;t&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Test&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;e&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Edit page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Add new page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;p&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Properties&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;w&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Where used?&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Focus on search bar&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;s&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Open search page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;g&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;u&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Go to User Guide&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script src="/files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src="/files/fitnesse/question.mark/question.mark.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script type="text/javascript"&amp;gt;
+
+  
+        Mousetrap.bind('e', function() { window.location.href ="NormalPage.SubPage?edit"; });
+        Mousetrap.bind('a', function() { window.location.href ="NormalPage.SubPage?new"; });
+        Mousetrap.bind('p', function() { window.location.href ="NormalPage.SubPage?properties"; });
+        Mousetrap.bind('w', function() { window.location.href ="NormalPage.SubPage?whereUsed"; });
+        Mousetrap.bind('v', function() { window.location.href ="NormalPage.SubPage?versions"; });
+        Mousetrap.bind('s', function() { window.location.href ="NormalPage.SubPage?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+        Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+  
+&amp;lt;/script&amp;gt;
+
+  &amp;lt;/article&amp;gt;
+  
+    &amp;lt;footer&amp;gt;
+   footer  &amp;lt;/footer&amp;gt;
+  
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr/&gt;
+&lt;br/&gt;&lt;h3&gt;Test that sub headers and sub footers override inherited headers and footers.&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;Create sub header and sub footer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;Page creator.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Page name.&lt;/td&gt;
+		&lt;td&gt;Page contents.&lt;/td&gt;
+		&lt;td&gt;Page attributes.&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;NormalPage.PageHeader&lt;/td&gt;
+		&lt;td&gt;sub header&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;blank&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;NormalPage.PageFooter&lt;/td&gt;
+		&lt;td&gt;sub footer&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;blank&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Then request the Sub page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;Response Requester.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;NormalPage.SubPage&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Ensure that the sub header and and sub footer text are inherited override their parents..&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;Response Examiner.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+		&lt;td&gt;wrapped html?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;(sub header).*(sub page).*(sub footer)&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;&lt;pre&gt;HTTP/1.1 200 OK
+Content-Length: 6261
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+  &amp;lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&amp;gt;
+  &amp;lt;title&amp;gt;NormalPage.SubPage&amp;lt;/title&amp;gt;
+    &amp;lt;!--[if lt IE 9]&amp;gt;
+   &amp;lt;script&amp;gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &amp;lt;/script&amp;gt;
+  &amp;lt;![endif]--&amp;gt;
+  
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_wiki.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_pages.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_straight.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/question.mark/question.mark.css" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.base" href="/" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/editor.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="shortcut icon" type="image/png" href="/files/fitnesse/images/favicon.png" /&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/jquery-1.7.2.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse_straight.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body class="wikiPage"&amp;gt;
+
+  &amp;lt;header&amp;gt;
+   &amp;lt;a href="/FrontPage" id="art_niche"&amp;gt;&amp;lt;span&amp;gt;FitNesse&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+ &amp;lt;li&amp;gt;&amp;lt;a href="/NormalPage"&amp;gt;NormalPage&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h1&amp;gt;SubPage&amp;lt;/h1&amp;gt;
+
+
+
+  &amp;lt;/header&amp;gt;
+  
+    
+  &amp;lt;nav&amp;gt;
+   &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?edit" accesskey="e"&amp;gt;Edit&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   
+  &amp;lt;li id="add" aria-haspopup="true"&amp;gt;&amp;lt;a href="NormalPage.SubPage?new" class="label"&amp;gt;Add&amp;lt;/a&amp;gt;
+  &amp;lt;ul&amp;gt;
+     &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+  
+ &amp;lt;li id="tools" aria-haspopup="true"&amp;gt;&amp;lt;a href="#" class="label"&amp;gt;Tools&amp;lt;/a&amp;gt;
+      &amp;lt;ul&amp;gt;
+     &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?properties" accesskey="p"&amp;gt;Properties&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?whereUsed" accesskey="w"&amp;gt;Where Used&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?versions" accesskey="v"&amp;gt;Versions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="NormalPage.SubPage?refactor&amp;amp;amp;type=rename"&amp;gt;Rename&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?refactor&amp;amp;amp;type=move"&amp;gt;Move&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?refactor&amp;amp;amp;type=replace"&amp;gt;Replace&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="NormalPage.SubPage?deletePage"&amp;gt;Delete&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li  class="divider"&amp;gt;&amp;lt;a href="/files" accesskey="f"&amp;gt;Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="?searchForm" accesskey="s"&amp;gt;Search&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="/RecentChanges" accesskey=""&amp;gt;Recent Changes&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  
+      
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="/FitNesse.UserGuide" accesskey=""&amp;gt;User Guide&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+  &amp;lt;/nav&amp;gt;
+  
+  &amp;lt;article&amp;gt;
+   sub headersub page
+
+&amp;lt;div id="helpUnderlay" class="help-underlay"&amp;gt;
+    &amp;lt;div id="helpModal" class="help-modal"&amp;gt;
+        &amp;lt;h1&amp;gt;Keyboard Shortcuts &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;&amp;lt;/h1&amp;gt;
+        &amp;lt;div id="helpClose" class="help-close"&amp;gt;&amp;amp;times;&amp;lt;/div&amp;gt;
+        &amp;lt;div id="helpModalContent" class="help-modal-content"&amp;gt;
+            &amp;lt;div id="helpListWrap" class="help-list-wrap"&amp;gt;
+                &amp;lt;ul class="help-list"&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;t&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Test&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;e&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Edit page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Add new page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;p&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Properties&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;w&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Where used?&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Focus on search bar&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;s&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Open search page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;g&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;u&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Go to User Guide&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script src="/files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src="/files/fitnesse/question.mark/question.mark.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script type="text/javascript"&amp;gt;
+
+  
+        Mousetrap.bind('e', function() { window.location.href ="NormalPage.SubPage?edit"; });
+        Mousetrap.bind('a', function() { window.location.href ="NormalPage.SubPage?new"; });
+        Mousetrap.bind('p', function() { window.location.href ="NormalPage.SubPage?properties"; });
+        Mousetrap.bind('w', function() { window.location.href ="NormalPage.SubPage?whereUsed"; });
+        Mousetrap.bind('v', function() { window.location.href ="NormalPage.SubPage?versions"; });
+        Mousetrap.bind('s', function() { window.location.href ="NormalPage.SubPage?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+        Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+  
+&amp;lt;/script&amp;gt;
+
+  &amp;lt;/article&amp;gt;
+  
+    &amp;lt;footer&amp;gt;
+   sub footer  &amp;lt;/footer&amp;gt;
+  
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;tear down&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>TestHeadersAndFooters</relativePageName>
+          </result>
+      <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>53</totalRunTimeInMillis>
+  
+</testResults>
+

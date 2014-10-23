@@ -1,0 +1,16 @@
+!path dbfit/lib/**.jar
+!path bin
+
+!define TEST_SYSTEM {slim}
+!define SLIM_PORT {9000}
+
+!contents -R2 -g -p -f -h
+!1 IdmFit
+
+Acceptance tests in Identity Management Environments are somehow complex things.
+Since Novell Identity Manager is based on Novell eDirectory and one of the most common connected systems is the Microsoft Active Directory, 
+the number 1 common communication protocol is LDAP. This Project initialy aims to implement testing features for LDAP services. 
+Therefore it implements FitNesse fixtures that uses [[!-ldapChai-!][https://code.google.com/p/ldapchai/]]
+
+Beyond LDAP another kind of common connected systems are databases. A huge ammount auf database platforms can be addressed with JDBC 
+and acceptance tests can be created with DbFit which is also part of this distribution.

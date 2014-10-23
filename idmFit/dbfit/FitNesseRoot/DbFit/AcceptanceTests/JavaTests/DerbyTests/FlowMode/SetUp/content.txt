@@ -1,0 +1,3 @@
+!|dbfit.EmbeddedDerbyTest|
+
+!|Connect|jdbc:derby:memory:dbfitdb;create=true|

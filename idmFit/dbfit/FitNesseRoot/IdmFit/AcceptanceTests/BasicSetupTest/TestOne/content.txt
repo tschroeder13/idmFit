@@ -1,0 +1,120 @@
+!define metauser {cn=jpublic,ou=test,ou=MI,ou=VM,ou=V,o=STW}
+!define metauser_ren {cn=jpub,ou=test,ou=MI,ou=VM,ou=V,o=STW}
+!define metauser_mov {cn=jpub,ou=MI,ou=VM,ou=V,o=STW}
+!define aduser {CN=jpublic,OU=test,OU=MI,OU=VM,OU=V,OU=STW,DC=2k12,DC=tsc}
+!define aduser_ren {CN=jpub,OU=test,OU=MI,OU=VM,OU=V,OU=STW,DC=2k12,DC=tsc}
+!define aduser_mov {CN=jpub,OU=MI,OU=VM,OU=V,OU=STW,DC=2k12,DC=tsc}
+!define pwpolicy {cn=Sample Password Policy,cn=Password Policies,cn=Security}
+!define meta_ou {ou=test,ou=MI,ou=VM,ou=V,o=STW}
+!define ad_ou {OU=test,OU=MI,OU=VM,OU=V,OU=STW,DC=2k12,DC=tsc}
+
+!1 Erzeugung der Organizational Unit
+Unterhalb eines der definierten Startcontainer wird eine neuer Testcontainer erstellt.
+|script|Ldap Operation Script|metatree|
+|create object|${meta_ou}|with class | organizationalUnit | and attributes | !{nspmPasswordPolicyDN:${pwpolicy}}|
+|ensure| object |${meta_ou}| exists |
+
+Dieser wird er nach einer Wartezeit von 15 Sekunden
+| Sleep | 15000 | 
+ direkt ins AD synchronisiert
+|script|Ldap Operation Script|ad|
+|ensure| object |${ad_ou}|exists|
+
+
+!1 Erzeugung eines Test-User 
+Danach legen wir einen User im in diesem neuen Container an
+
+|script|Ldap Operation Script|metatree|
+|create object|${metauser}|with class | inetOrgPerson| and attributes | !{sn:Public, givenName:Joe, fullname:Joe Public, generationQualifier:Herr, title:Dr.}|
+|ensure| object |${metauser}| exists |
+
+Dieser darf noch nicht ins AD transferiert werden
+
+|script|Ldap Operation Script|ad|
+|reject| object |${aduser}|exists|
+
+Erst wenn im eDir der User zur Gruppe ADSYNC hinzukommt, 
+
+!define grp {cn=ADSYNC,ou=GRP,o=STW}
+|script|Ldap Operation Script|metatree|
+|set password| p4ssWort | for | ${metauser} | 
+|add user|${metauser}|to group|${grp}|
+|ensure| password | p4ssWort |is correct for | ${metauser} |
+
+wird er nach einer Wartezeit von 15 Sekunden
+| Sleep | 15000 | 
+ * auch im AD angelegt,
+ * hat als Titel die Kombination as den oben im eDirectory angegebenen Werten für !-$generationQualifier+" "+$title-!
+ * und hat das Passwort gesetzt
+
+|script|Ldap Operation Script|ad|
+|ensure | object exists;|${aduser}|
+|ensure| attribute | title |contains value | Herr Dr. | for object | ${aduser}|
+|ensure|user|${aduser}| can connect to server |ldaps://192.168.56.22:636| with password | p4ssWort|
+
+!2 Filteroperationen
+Wird auf dem eDir-User eine Telefonnummer hinterlegt, 
+
+|script|Ldap Operation Script|metatree|
+|add attribute| !-telephoneNumber-! | with value | 555-698741 | to Object | ${metauser} |
+
+wird diese ins AD synchronisiert
+(warte 10 s)
+| Sleep | 10000 |
+
+|script|Ldap Operation Script|ad|
+|ensure| attribute | !-telephoneNumber-! | contains value | 555-698741 | for object | ${aduser} |
+
+!2 Disable User
+Wird der User im eDir disabled 
+|script|Ldap Operation Script|metatree|
+|replace attributes| !-loginDisabled-! | old value | false | with new value | true |on Object | ${metauser} |
+|reject|user account |${metauser} | is enabled |
+
+geschieht dies auch im AD
+(warte 10 s)
+| Sleep | 10000 |
+
+|script|Ldap Operation Script|ad|
+|reject|user account |${aduser}| is enabled |
+
+!2 Enable User
+Wird der User im eDir Enabled 
+|script|Ldap Operation Script|metatree|
+|replace attributes| !-loginDisabled-! | old value | true | with new value | false |on Object | ${metauser} |
+|ensure|user account |${metauser} |is enabled|
+
+geschieht dies auch im AD
+(warte 10 s)
+!1 MANUELL Überprüfen! muss userAccountControl muss 512 sein
+| Sleep | 10000 |
+
+|script|Ldap Operation Script|ad|
+|ensure|user account |${aduser}| is enabled |
+!!|$ad_uac=|get attribute|!-userAccountControl-!| for object | ${aduser}|
+
+
+!1 User umbenennen
+Wird der User im eDir umbenannt
+|script|Ldap Operation Script|metatree|
+|rename user|${metauser}|to|${metauser_ren}|
+
+|Sleep|5000|
+wird er auch im AD umbenannt 
+
+|script|Ldap Operation Script|ad|
+|ensure| object | ${aduser_ren}| exists|
+
+!1 User verschieben
+Wird der User im eDir verschoben
+
+|script|Ldap Operation Script|metatree|
+|rename user|${metauser_ren}|to|${metauser_mov}|
+
+|Sleep|5000|
+wird er auch im AD verschoben
+
+|script|Ldap Operation Script|ad|
+|ensure| object | ${aduser_mov}| exists|
+
+!include DeleteUser

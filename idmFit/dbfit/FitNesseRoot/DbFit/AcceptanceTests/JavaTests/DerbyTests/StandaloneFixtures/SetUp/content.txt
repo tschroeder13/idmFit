@@ -1,0 +1,5 @@
+|import fixture|
+|dbfit.fixture|
+
+!|DatabaseEnvironment|EmbeddedDerby|
+|Connect|jdbc:derby:memory:dbfitdb;create=true|

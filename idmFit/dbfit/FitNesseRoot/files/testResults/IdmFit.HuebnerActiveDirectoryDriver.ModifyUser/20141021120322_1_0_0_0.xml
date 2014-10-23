@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFit.HuebnerActiveDirectoryDriver.ModifyUser</rootPath>
+    <result>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>30178</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;h1&gt;Bearbeiten von User Attributen&lt;/h1&gt;
+Wird auf dem eDir-User eine Telefonnummer hinterlegt, &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;add attribute&lt;/td&gt;
+		&lt;td&gt;telephoneNumber&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td&gt;555-698741&lt;/td&gt;
+		&lt;td&gt;to Object&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;wird diese ins AD synchronisiert&lt;br/&gt;(warte 10 s)&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;10000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="5"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;attribute&lt;/td&gt;
+		&lt;td&gt;telephoneNumber&lt;/td&gt;
+		&lt;td&gt;contains value&lt;/td&gt;
+		&lt;td&gt;555-698741&lt;/td&gt;
+		&lt;td&gt;for object&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h2&gt;Disable User&lt;/h2&gt;
+Wird der User im eDir disabled &lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="6"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;replace attributes&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;loginDisabled&lt;/td&gt;
+		&lt;td&gt;old value&lt;/td&gt;
+		&lt;td&gt;false&lt;/td&gt;
+		&lt;td&gt;with new value&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+		&lt;td&gt;on Object&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user account&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td colspan="5"&gt;is enabled&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;geschieht dies auch im AD&lt;br/&gt;(warte 10 s)&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;10000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user account&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;is enabled&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h2&gt;Enable User&lt;/h2&gt;
+Wird der User im eDir Enabled &lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="6"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;replace attributes&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;loginDisabled&lt;/td&gt;
+		&lt;td&gt;old value&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+		&lt;td&gt;with new value&lt;/td&gt;
+		&lt;td&gt;false&lt;/td&gt;
+		&lt;td&gt;on Object&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user account&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td colspan="5"&gt;is enabled&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;geschieht dies auch im AD&lt;br/&gt;(warte 10 s)&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;10000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user account&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;is enabled&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>ModifyUser</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_1', instruction='call', instanceName='scriptTableActor', methodName='addAttributeWithValueToObject', args=[telephoneNumber, 555-698741, cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='Sleep', args=[10000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_2_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='attributeContainsValueForObject', args=[telephoneNumber, 555-698741, CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_2_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_3_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='replaceAttributesOldValueWithNewValueOnObject', args=[loginDisabled, false, true, cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_3_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='userAccountIsEnabled', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_3_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_0', instruction='make', instanceName='decisionTable_4', className='Sleep', args=[10000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_4_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_1', instruction='call', instanceName='scriptTableActor', methodName='userAccountIsEnabled', args=[CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_6_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_1', instruction='call', instanceName='scriptTableActor', methodName='replaceAttributesOldValueWithNewValueOnObject', args=[loginDisabled, true, false, cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_6_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_2', instruction='call', instanceName='scriptTableActor', methodName='userAccountIsEnabled', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_6_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_7_0', instruction='make', instanceName='decisionTable_7', className='Sleep', args=[10000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_7_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_8_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_1', instruction='call', instanceName='scriptTableActor', methodName='userAccountIsEnabled', args=[CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_8_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+      <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>30178</totalRunTimeInMillis>
+  
+</testResults>
+

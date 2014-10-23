@@ -1,0 +1,22 @@
+!1 User umbenennen
+Wird der User im eDir umbenannt
+|script|Ldap Operation Script|metatree|
+|rename user|${metauser}|to|${metauser_ren}|
+
+|Sleep|5000|
+wird er auch im AD umbenannt 
+
+|script|Ldap Operation Script|ad|
+|ensure| object | ${aduser_ren}| exists|
+
+!1 User verschieben
+Wird der User im eDir verschoben
+
+|script|Ldap Operation Script|metatree|
+|move user|${metauser_ren}|to|${metauser_mov}|
+
+|Sleep|5000|
+wird er auch im AD verschoben
+
+|script|Ldap Operation Script|ad|
+|ensure| object | ${aduser_mov}| exists|

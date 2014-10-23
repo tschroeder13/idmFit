@@ -1,0 +1,36 @@
+!1 Erzeugen eines Users und hinzufügen zur ADUser Gruppe und setzen des PW
+
+Im eDirectory wird ein User angelegt und das Universal (und damit das Distribution) Password gesetzt
+
+|script|Ldap Operation Script|metatree|
+|create object|${metauser}|with class | inetOrgPerson| and attributes | !{sn:Public, givenName:Joe, fullName:Joe Public}|
+|create object|cn=jsixpack,${meta_ou}|with class | inetOrgPerson| and attributes | !{sn:Sixpack, givenName:John, fullName:John Sicpack}|
+|ensure| object |${metauser}| exists |
+|ensure| object |cn=jsixpack,${meta_ou}| exists |
+|set password| p4ssWort | for | ${metauser} | 
+|set password| p4ssWort | for | cn=jsixpack,${meta_ou}| 
+|ensure| password | p4ssWort |is correct for | ${metauser} |
+|ensure| password | p4ssWort |is correct for | cn=jsixpack,${meta_ou} |
+
+Dieser darf noch nicht ins AD transferiert werden
+
+|script|Ldap Operation Script|ad|
+|reject| object |${aduser}|exists|
+
+Erst wenn im eDir der User zur Gruppe ADSYNC hinzukommt, 
+
+
+|script|Ldap Operation Script|metatree|
+|add user|${metauser}|to group|${adsync_grp}|
+|add user|cn=jsixpack,${meta_ou}|to group|${adsync_grp}|
+
+wird er nach einer Wartezeit von 15 Sekunden
+| Sleep | 15000 | 
+ * auch im AD angelegt,
+ * und kann mit Passwort im AD angemeldet werden
+
+|script|Ldap Operation Script|ad|
+|ensure | object |${aduser}|exists|
+|ensure|user|${aduser}| can connect to server |ldaps://192.168.56.22:636| with password | p4ssWort|
+|ensure | object |CN=jsixpack,${ad_ou}|exists|
+|ensure|user|cn=jsixpack,${ad_ou}| can connect to server |ldaps://192.168.56.22:636| with password | p4ssWort|

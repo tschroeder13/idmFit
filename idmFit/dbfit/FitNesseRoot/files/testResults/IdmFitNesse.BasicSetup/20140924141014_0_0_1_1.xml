@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFitNesse.BasicSetup</rootPath>
+    <pageHistoryReference>
+    <name>IdmFitNesse.BasicSetup.ConnectionSetup</name>
+    <date>09/24/2014 14:10:14</date>
+    <pageHistoryLink>IdmFitNesse.BasicSetup.ConnectionSetup?pageHistory&amp;resultDate=20140924141014</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>IdmFitNesse.BasicSetup.ConnectionState</name>
+    <date>09/24/2014 14:10:14</date>
+    <pageHistoryLink>IdmFitNesse.BasicSetup.ConnectionState?pageHistory&amp;resultDate=20140924141014</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>3</runTimeInMillis>
+  </pageHistoryReference>
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>1</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1019</totalRunTimeInMillis>
+
+</suiteResults>
+

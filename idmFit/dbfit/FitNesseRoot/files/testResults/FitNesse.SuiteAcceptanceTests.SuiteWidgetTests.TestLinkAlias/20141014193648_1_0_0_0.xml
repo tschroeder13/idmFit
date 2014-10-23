@@ -1,0 +1,3719 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.TestLinkAlias</rootPath>
+    <result>
+    <counts>
+      <right>34</right>
+      <wrong>0</wrong>
+      <ignores>2</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>156</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary"&gt;.FitNesse.SuiteAcceptanceTests.ScenarioLibrary&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;@content&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT=&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;@page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td colspan="2"&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;nothing&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given test page&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td colspan="2"&gt;@page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;a test page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;given slim test page&lt;/td&gt;
+		&lt;td colspan="2"&gt;page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;given page&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td&gt;!define TEST_SYSTEM {slim}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;@page&lt;/td&gt;
+		&lt;td colspan="2"&gt;a test page&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;&amp;lt;a href="@target"&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$IT=&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td colspan="3"&gt;@source&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should have link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and it should have link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should have creating link to&lt;/td&gt;
+		&lt;td&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@target&amp;lt;a title="create page" href="@target?edit&amp;amp;nonExistent=true"&amp;gt;[?]&amp;lt;/a&amp;gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should have creating link to&lt;/td&gt;
+		&lt;td colspan="2"&gt;target&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should have creating link to&lt;/td&gt;
+		&lt;td&gt;@target&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should match&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should not contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+		&lt;td&gt;in line&lt;/td&gt;
+		&lt;td&gt;symbol&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$@symbol=&lt;/td&gt;
+		&lt;td&gt;line number containing&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;it should match&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should match&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;test results for page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source?test&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;its test results should contain&lt;/td&gt;
+		&lt;td colspan="2"&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;test results for page&lt;/td&gt;
+		&lt;td&gt;$IT&lt;/td&gt;
+		&lt;td&gt;should contain&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;test ressults for page&lt;/td&gt;
+		&lt;td&gt;source&lt;/td&gt;
+		&lt;td&gt;should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;@source?test&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td colspan="3"&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should match&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;and should not contain&lt;/td&gt;
+		&lt;td&gt;text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;reject&lt;/td&gt;
+		&lt;td&gt;content contains&lt;/td&gt;
+		&lt;td&gt;@text&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="2"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;widget&lt;/td&gt;
+		&lt;td&gt;wikiText&lt;/td&gt;
+		&lt;td&gt;should render&lt;/td&gt;
+		&lt;td&gt;htmlText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;create page&lt;/td&gt;
+		&lt;td&gt;WidgetPage&lt;/td&gt;
+		&lt;td&gt;with content&lt;/td&gt;
+		&lt;td colspan="2"&gt;@wikiText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;request page&lt;/td&gt;
+		&lt;td&gt;WidgetPage&lt;/td&gt;
+		&lt;td colspan="2"&gt;200&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;ensure&lt;/td&gt;
+		&lt;td&gt;content matches&lt;/td&gt;
+		&lt;td colspan="3"&gt;@htmlText&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;content&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;the line&lt;/td&gt;
+		&lt;td&gt;after&lt;/td&gt;
+		&lt;td&gt;should come after&lt;/td&gt;
+		&lt;td&gt;before&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;echo int&lt;/td&gt;
+		&lt;td&gt;$@before&lt;/td&gt;
+		&lt;td colspan="2"&gt;&amp;lt; $@after&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;pass&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;echo&lt;/td&gt;
+		&lt;td&gt;pass&lt;/td&gt;
+		&lt;td&gt;pass&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.SetUp"&gt;.FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp"&gt;&amp;lt;SuiteAcceptanceTests.SetUp&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;SetUp&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Library&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;echo fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;page driver&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;h2&gt;Test the Link Alias syntax.&lt;/h2&gt;
+Aliases to links can be created using the [[tag][link]] syntax.&lt;br/&gt;The tag is interpreted for markup syntax, so it can be italic, or bold, or an image, etc.  The link can be a relative or global wiki word, or it can be an http link.&lt;br/&gt;&lt;br/&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;h3&gt;Test relative link alias&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;First create two sub pages.  One has a relative link to the other.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Page creator.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Page name.&lt;/td&gt;
+		&lt;td&gt;Page contents.&lt;/td&gt;
+		&lt;td&gt;Page attributes.&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SomePage.TargetPage&lt;/td&gt;
+		&lt;td&gt;target page&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SomePage.LinkPage&lt;/td&gt;
+		&lt;td&gt;[[tag][TargetPage]]&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Then get the page with the relative link on it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;Response Requester.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SomePage.LinkPage&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Then make sure the relative link is properly constructed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="SomePage.TargetPage"&gt;tag&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr/&gt;
+&lt;br/&gt;&lt;h3&gt;Test global link alias&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;First create a sub page that has a global reference to another sub page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Page creator.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Page name.&lt;/td&gt;
+		&lt;td&gt;Page contents.&lt;/td&gt;
+		&lt;td&gt;Page attributes.&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SomePage.GlobalLinkPage&lt;/td&gt;
+		&lt;td&gt;[[tag][.SomePage.TargetPage]]&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Then fetch that page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;Response Requester.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SomePage.GlobalLinkPage&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Make sure the link is properly formed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="SomePage.TargetPage"&gt;tag&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr/&gt;
+&lt;br/&gt;&lt;h3&gt;Test variables get rendered in http link alias&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;First create a page with a variable and http link on it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;start&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Page Builder&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;!define HOST {localhost:8080}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag][http://${HOST}/page]] works fine.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;HttpLinkPage&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;Fetch the page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;Response Requester.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;HttpLinkPage&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;Make sure the link is properly constructed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="http://localhost:8080/page"&gt;tag&lt;/a&gt; works fine.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr/&gt;
+&lt;br/&gt;&lt;h3&gt;Test variables defined in parent page get rendered in http link alias on child pages&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;First define parent page with variable definition and child page with a http link which uses the variable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Page creator.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Page name.&lt;/td&gt;
+		&lt;td&gt;Page contents.&lt;/td&gt;
+		&lt;td&gt;Page attributes.&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SomePage.ParentPage&lt;/td&gt;
+		&lt;td&gt;!define HOST {localhost:8080}&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SomePage.ParentPage.ChildPage&lt;/td&gt;
+		&lt;td&gt;[[tag][http://${HOST}/page]] works fine.&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;Fetch the page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;Response Requester.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;SomePage.ParentPage.ChildPage&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;Make sure the link is properly constructed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="http://localhost:8080/page"&gt;tag&lt;/a&gt; works fine.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr size="2"/&gt;
+&lt;br/&gt;&lt;h3&gt;Test expressions without variables in link alias&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;Create pages to refer to&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Page creator.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Page name.&lt;/td&gt;
+		&lt;td&gt;Page contents.&lt;/td&gt;
+		&lt;td&gt;Page attributes.&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;PageLink2&lt;/td&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;PageLink4&lt;/td&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;PageLink10&lt;/td&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;First create a page with a variables and http link on it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;start&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Page Builder&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;!define X {5}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;!define Y (4)&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;!define EXPR (${=3+2-1=})&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag][PageLink${= 3 - 2 + 1 =}]] works fine.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag][PageLink${EXPR}]] works too.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag][PageLink${=${X}+${Y}+1=}]] works as well.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;HttpExprPage&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;Fetch the page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Response Requester.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+		&lt;td&gt;contents?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;HttpExprPage&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="ignore"&gt;&lt;pre&gt;HTTP/1.1 200 OK
+Content-Length: 6404
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+  &amp;lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&amp;gt;
+  &amp;lt;title&amp;gt;HttpExprPage&amp;lt;/title&amp;gt;
+    &amp;lt;!--[if lt IE 9]&amp;gt;
+   &amp;lt;script&amp;gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &amp;lt;/script&amp;gt;
+  &amp;lt;![endif]--&amp;gt;
+  
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_wiki.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_pages.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_straight.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/question.mark/question.mark.css" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.base" href="/" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/editor.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="shortcut icon" type="image/png" href="/files/fitnesse/images/favicon.png" /&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/jquery-1.7.2.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse_straight.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body class="wikiPage"&amp;gt;
+
+  &amp;lt;header&amp;gt;
+   &amp;lt;a href="/FrontPage" id="art_niche"&amp;gt;&amp;lt;span&amp;gt;FitNesse&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h1&amp;gt;HttpExprPage&amp;lt;/h1&amp;gt;
+
+
+
+  &amp;lt;/header&amp;gt;
+  
+    
+  &amp;lt;nav&amp;gt;
+   &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?edit" accesskey="e"&amp;gt;Edit&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   
+  &amp;lt;li id="add" aria-haspopup="true"&amp;gt;&amp;lt;a href="HttpExprPage?new" class="label"&amp;gt;Add&amp;lt;/a&amp;gt;
+  &amp;lt;ul&amp;gt;
+     &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+  
+ &amp;lt;li id="tools" aria-haspopup="true"&amp;gt;&amp;lt;a href="#" class="label"&amp;gt;Tools&amp;lt;/a&amp;gt;
+      &amp;lt;ul&amp;gt;
+     &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?properties" accesskey="p"&amp;gt;Properties&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?whereUsed" accesskey="w"&amp;gt;Where Used&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?versions" accesskey="v"&amp;gt;Versions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="HttpExprPage?refactor&amp;amp;amp;type=rename"&amp;gt;Rename&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?refactor&amp;amp;amp;type=move"&amp;gt;Move&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?refactor&amp;amp;amp;type=replace"&amp;gt;Replace&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?deletePage"&amp;gt;Delete&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li  class="divider"&amp;gt;&amp;lt;a href="/files" accesskey="f"&amp;gt;Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="?searchForm" accesskey="s"&amp;gt;Search&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="/RecentChanges" accesskey=""&amp;gt;Recent Changes&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  
+      
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="/FitNesse.UserGuide" accesskey=""&amp;gt;User Guide&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+  &amp;lt;/nav&amp;gt;
+  
+  &amp;lt;article&amp;gt;
+   &amp;lt;span class="meta"&amp;gt;variable defined: X=5&amp;lt;/span&amp;gt;
+&amp;lt;br/&amp;gt;&amp;lt;span class="meta"&amp;gt;variable defined: Y=4&amp;lt;/span&amp;gt;
+&amp;lt;br/&amp;gt;&amp;lt;span class="meta"&amp;gt;variable defined: EXPR=${=3+2-1=}&amp;lt;/span&amp;gt;
+&amp;lt;br/&amp;gt;&amp;lt;a href="PageLink2"&amp;gt;tag&amp;lt;/a&amp;gt; works fine.&amp;lt;br/&amp;gt;&amp;lt;a href="PageLink4"&amp;gt;tag&amp;lt;/a&amp;gt; works too.&amp;lt;br/&amp;gt;&amp;lt;a href="PageLink10"&amp;gt;tag&amp;lt;/a&amp;gt; works as well.&amp;lt;br/&amp;gt;
+
+&amp;lt;div id="helpUnderlay" class="help-underlay"&amp;gt;
+    &amp;lt;div id="helpModal" class="help-modal"&amp;gt;
+        &amp;lt;h1&amp;gt;Keyboard Shortcuts &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;&amp;lt;/h1&amp;gt;
+        &amp;lt;div id="helpClose" class="help-close"&amp;gt;&amp;amp;times;&amp;lt;/div&amp;gt;
+        &amp;lt;div id="helpModalContent" class="help-modal-content"&amp;gt;
+            &amp;lt;div id="helpListWrap" class="help-list-wrap"&amp;gt;
+                &amp;lt;ul class="help-list"&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;t&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Test&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;e&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Edit page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Add new page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;p&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Properties&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;w&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Where used?&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Focus on search bar&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;s&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Open search page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;g&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;u&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Go to User Guide&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script src="/files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src="/files/fitnesse/question.mark/question.mark.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script type="text/javascript"&amp;gt;
+
+  
+        Mousetrap.bind('e', function() { window.location.href ="HttpExprPage?edit"; });
+        Mousetrap.bind('a', function() { window.location.href ="HttpExprPage?new"; });
+        Mousetrap.bind('p', function() { window.location.href ="HttpExprPage?properties"; });
+        Mousetrap.bind('w', function() { window.location.href ="HttpExprPage?whereUsed"; });
+        Mousetrap.bind('v', function() { window.location.href ="HttpExprPage?versions"; });
+        Mousetrap.bind('s', function() { window.location.href ="HttpExprPage?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+        Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+  
+&amp;lt;/script&amp;gt;
+
+  &amp;lt;/article&amp;gt;
+  
+    &amp;lt;footer&amp;gt;
+     &amp;lt;/footer&amp;gt;
+  
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;Make sure the link is properly constructed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="PageLink2"&gt;tag&lt;/a&gt; works fine.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="PageLink4"&gt;tag&lt;/a&gt; works too.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="PageLink10"&gt;tag&lt;/a&gt; works as well.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h3&gt;Test that links with query strings and fragments are handled properly.&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;Create a page hierarchy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Page creator.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Page name.&lt;/td&gt;
+		&lt;td&gt;Page contents.&lt;/td&gt;
+		&lt;td&gt;Page attributes.&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;QueryPageRoot&lt;/td&gt;
+		&lt;td&gt;!anchor QPLabel   &lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;QueryPageRoot.TopPage&lt;/td&gt;
+		&lt;td&gt;!anchor QPTopLabel&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;Create a page of query and fragment links...and a child&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;start&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Page Builder&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag1 ][TopPage?edit]] has query.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag2 ][TopPage?edit#QPTopLabel]] has query and frag.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag3 ][TopPage#QPTopLabel]] has fragment.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag4 ][&lt;QueryPageRoot.TopPage?edit]] back has query.&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag5 ][.QueryPageRoot.TopPage?edit]] root has query.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag6 ][&lt;QueryPageRoot.TopPage?edit#QPTopLabel]] back has query and frag.&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag7 ][&lt;QueryPageRoot.TopPage#QPTopLabel]] back has fragment.&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag8 ][&gt;ChildFrag?edit]] child has query.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag9 ][&gt;ChildFrag?edit#QPTopLabel]] child has query and frag.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;line&lt;/td&gt;
+		&lt;td&gt;[[tag10][&gt;ChildFrag#QPTopLabel]] child has fragment.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;page&lt;/td&gt;
+		&lt;td&gt;QueryPageRoot.QueryFragmentLinks&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Page creator.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Page name.&lt;/td&gt;
+		&lt;td&gt;Page contents.&lt;/td&gt;
+		&lt;td&gt;Page attributes.&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;QueryPageRoot.QueryFragmentLinks.ChildFrag&lt;/td&gt;
+		&lt;td&gt;!anchor QPChild&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;Fetch the page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Response Requester.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;uri&lt;/td&gt;
+		&lt;td&gt;valid?&lt;/td&gt;
+		&lt;td&gt;contents?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;QueryPageRoot.QueryFragmentLinks&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="ignore"&gt;&lt;pre&gt;HTTP/1.1 200 OK
+Content-Length: 7294
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+  &amp;lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&amp;gt;
+  &amp;lt;title&amp;gt;QueryPageRoot.QueryFragmentLinks&amp;lt;/title&amp;gt;
+    &amp;lt;!--[if lt IE 9]&amp;gt;
+   &amp;lt;script&amp;gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &amp;lt;/script&amp;gt;
+  &amp;lt;![endif]--&amp;gt;
+  
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_wiki.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_pages.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_straight.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/question.mark/question.mark.css" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.base" href="/" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/editor.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="shortcut icon" type="image/png" href="/files/fitnesse/images/favicon.png" /&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/jquery-1.7.2.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse_straight.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body class="wikiPage"&amp;gt;
+
+  &amp;lt;header&amp;gt;
+   &amp;lt;a href="/FrontPage" id="art_niche"&amp;gt;&amp;lt;span&amp;gt;FitNesse&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+ &amp;lt;li&amp;gt;&amp;lt;a href="/QueryPageRoot"&amp;gt;QueryPageRoot&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h1&amp;gt;QueryFragmentLinks&amp;lt;/h1&amp;gt;
+
+
+
+  &amp;lt;/header&amp;gt;
+  
+    
+  &amp;lt;nav&amp;gt;
+   &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?edit" accesskey="e"&amp;gt;Edit&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   
+  &amp;lt;li id="add" aria-haspopup="true"&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?new" class="label"&amp;gt;Add&amp;lt;/a&amp;gt;
+  &amp;lt;ul&amp;gt;
+     &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+  
+ &amp;lt;li id="tools" aria-haspopup="true"&amp;gt;&amp;lt;a href="#" class="label"&amp;gt;Tools&amp;lt;/a&amp;gt;
+      &amp;lt;ul&amp;gt;
+     &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?properties" accesskey="p"&amp;gt;Properties&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?whereUsed" accesskey="w"&amp;gt;Where Used&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?versions" accesskey="v"&amp;gt;Versions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?refactor&amp;amp;amp;type=rename"&amp;gt;Rename&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?refactor&amp;amp;amp;type=move"&amp;gt;Move&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?refactor&amp;amp;amp;type=replace"&amp;gt;Replace&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?deletePage"&amp;gt;Delete&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li  class="divider"&amp;gt;&amp;lt;a href="/files" accesskey="f"&amp;gt;Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="?searchForm" accesskey="s"&amp;gt;Search&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="/RecentChanges" accesskey=""&amp;gt;Recent Changes&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  
+      
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="/FitNesse.UserGuide" accesskey=""&amp;gt;User Guide&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+  &amp;lt;/nav&amp;gt;
+  
+  &amp;lt;article&amp;gt;
+   &amp;lt;a href="QueryPageRoot.TopPage?edit"&amp;gt;tag1 &amp;lt;/a&amp;gt; has query.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit#QPTopLabel"&amp;gt;tag2 &amp;lt;/a&amp;gt; has query and frag.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage#QPTopLabel"&amp;gt;tag3 &amp;lt;/a&amp;gt; has fragment.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit"&amp;gt;tag4 &amp;lt;/a&amp;gt; back has query.&amp;amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit"&amp;gt;tag5 &amp;lt;/a&amp;gt; root has query.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit#QPTopLabel"&amp;gt;tag6 &amp;lt;/a&amp;gt; back has query and frag.&amp;amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage#QPTopLabel"&amp;gt;tag7 &amp;lt;/a&amp;gt; back has fragment.&amp;amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks.ChildFrag?edit"&amp;gt;tag8 &amp;lt;/a&amp;gt; child has query.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks.ChildFrag?edit#QPTopLabel"&amp;gt;tag9 &amp;lt;/a&amp;gt; child has query and frag.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks.ChildFrag#QPTopLabel"&amp;gt;tag10&amp;lt;/a&amp;gt; child has fragment.&amp;lt;br/&amp;gt;
+
+&amp;lt;div id="helpUnderlay" class="help-underlay"&amp;gt;
+    &amp;lt;div id="helpModal" class="help-modal"&amp;gt;
+        &amp;lt;h1&amp;gt;Keyboard Shortcuts &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;&amp;lt;/h1&amp;gt;
+        &amp;lt;div id="helpClose" class="help-close"&amp;gt;&amp;amp;times;&amp;lt;/div&amp;gt;
+        &amp;lt;div id="helpModalContent" class="help-modal-content"&amp;gt;
+            &amp;lt;div id="helpListWrap" class="help-list-wrap"&amp;gt;
+                &amp;lt;ul class="help-list"&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;t&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Test&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;e&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Edit page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Add new page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;p&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Properties&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;w&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Where used?&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Focus on search bar&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;s&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Open search page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;g&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;u&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Go to User Guide&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script src="/files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src="/files/fitnesse/question.mark/question.mark.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script type="text/javascript"&amp;gt;
+
+  
+        Mousetrap.bind('e', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?edit"; });
+        Mousetrap.bind('a', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?new"; });
+        Mousetrap.bind('p', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?properties"; });
+        Mousetrap.bind('w', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?whereUsed"; });
+        Mousetrap.bind('v', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?versions"; });
+        Mousetrap.bind('s', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+        Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+  
+&amp;lt;/script&amp;gt;
+
+  &amp;lt;/article&amp;gt;
+  
+    &amp;lt;footer&amp;gt;
+     &amp;lt;/footer&amp;gt;
+  
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;Make sure the query and fragments don't interfere with page paths.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Response Examiner.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;type&lt;/td&gt;
+		&lt;td&gt;pattern&lt;/td&gt;
+		&lt;td&gt;matches?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="QueryPageRoot\.TopPage\?edit"&gt;tag1 &lt;/a&gt; has query.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="QueryPageRoot\.TopPage\?edit#QPTopLabel"&gt;tag2 &lt;/a&gt; has query and frag.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="QueryPageRoot\.TopPage#QPTopLabel"&gt;tag3 &lt;/a&gt; has fragment.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="QueryPageRoot\.TopPage\?edit"&gt;tag4 &lt;/a&gt; back has query.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="QueryPageRoot\.TopPage\?edit"&gt;tag5 &lt;/a&gt; root has query.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="QueryPageRoot\.TopPage\?edit#QPTopLabel"&gt;tag6 &lt;/a&gt; back has query and frag.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="QueryPageRoot\.TopPage#QPTopLabel"&gt;tag7 &lt;/a&gt; back has fragment.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="QueryPageRoot\.QueryFragmentLinks\.ChildFrag\?edit"&gt;tag8 &lt;/a&gt; child has query.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="QueryPageRoot\.QueryFragmentLinks\.ChildFrag\?edit#QPTopLabel"&gt;tag9 &lt;/a&gt; child has query and frag.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;contents&lt;/td&gt;
+		&lt;td&gt;&lt;a href="QueryPageRoot\.QueryFragmentLinks\.ChildFrag#QPTopLabel"&gt;tag10&lt;/a&gt; child has fragment.&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown"&gt;.FitNesse.SuiteAcceptanceTests.TearDown&lt;/a&gt; &lt;a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;hr/&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;tear down&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>TestLinkAlias</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_25_0', instruction='import', path='fitnesse.fixtures'}</instruction>
+        <slimResult>pass(fitnesse.fixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_25_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_26_0', instruction='make', instanceName='decisionTable_26', className='SetUp', args=[]}</instruction>
+        <slimResult>pass(SetUp)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_26_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>SetUp</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='library_27_0', instruction='make', instanceName='library1', className='EchoFixture', args=[]}</instruction>
+        <slimResult>pass(echo fixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>library_27_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>echo fixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='library_27_1', instruction='make', instanceName='library2', className='PageDriver', args=[]}</instruction>
+        <slimResult>pass(page driver)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>library_27_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>page driver</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_0', instruction='make', instanceName='decisionTable_28', className='PageCreator', args=[]}</instruction>
+        <slimResult>pass(Page creator.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_28_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page creator.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_4', instruction='call', instanceName='decisionTable_28', methodName='setPageName', args=[SomePage.TargetPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_5', instruction='call', instanceName='decisionTable_28', methodName='setPageContents', args=[target page]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_6', instruction='call', instanceName='decisionTable_28', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_8', instruction='call', instanceName='decisionTable_28', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_28_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_10', instruction='call', instanceName='decisionTable_28', methodName='setPageName', args=[SomePage.LinkPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_10</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_11', instruction='call', instanceName='decisionTable_28', methodName='setPageContents', args=[[[tag][TargetPage]]]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_12', instruction='call', instanceName='decisionTable_28', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_28_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_28_14', instruction='call', instanceName='decisionTable_28', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_28_14</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_0', instruction='make', instanceName='decisionTable_29', className='ResponseRequester', args=[]}</instruction>
+        <slimResult>pass(Response Requester.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_29_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Requester.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_4', instruction='call', instanceName='decisionTable_29', methodName='setUri', args=[SomePage.LinkPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_29_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_29_6', instruction='call', instanceName='decisionTable_29', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_29_6</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_0', instruction='make', instanceName='decisionTable_30', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_30_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_4', instruction='call', instanceName='decisionTable_30', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_30_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_5', instruction='call', instanceName='decisionTable_30', methodName='setPattern', args=[&lt;a href="SomePage.TargetPage"&gt;tag&lt;/a&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_30_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_6', instruction='call', instanceName='decisionTable_30', methodName='setValue', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_30_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_8', instruction='call', instanceName='decisionTable_30', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_30_8</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_31_0', instruction='make', instanceName='decisionTable_31', className='PageCreator', args=[]}</instruction>
+        <slimResult>pass(Page creator.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_31_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page creator.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_31_4', instruction='call', instanceName='decisionTable_31', methodName='setPageName', args=[SomePage.GlobalLinkPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_31_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_31_5', instruction='call', instanceName='decisionTable_31', methodName='setPageContents', args=[[[tag][.SomePage.TargetPage]]]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_31_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_31_6', instruction='call', instanceName='decisionTable_31', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_31_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_31_8', instruction='call', instanceName='decisionTable_31', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_31_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_32_0', instruction='make', instanceName='decisionTable_32', className='ResponseRequester', args=[]}</instruction>
+        <slimResult>pass(Response Requester.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_32_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Requester.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_32_4', instruction='call', instanceName='decisionTable_32', methodName='setUri', args=[SomePage.GlobalLinkPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_32_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_32_6', instruction='call', instanceName='decisionTable_32', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_32_6</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_0', instruction='make', instanceName='decisionTable_33', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_33_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_4', instruction='call', instanceName='decisionTable_33', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_33_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_5', instruction='call', instanceName='decisionTable_33', methodName='setPattern', args=[&lt;a href="SomePage.TargetPage"&gt;tag&lt;/a&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_33_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_6', instruction='call', instanceName='decisionTable_33', methodName='setValue', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_33_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_8', instruction='call', instanceName='decisionTable_33', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_33_8</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_34_0', instruction='make', instanceName='scriptTableActor', className='PageBuilder', args=[]}</instruction>
+        <slimResult>pass(Page Builder)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_34_0</instructionId>
+                    <col>1</col>
+                              <row>1</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page Builder</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_34_1', instruction='call', instanceName='scriptTableActor', methodName='line', args=[!define HOST {localhost:8080}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_34_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_34_2', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag][http://${HOST}/page]] works fine.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_34_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_34_3', instruction='call', instanceName='scriptTableActor', methodName='page', args=[HttpLinkPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_34_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_35_0', instruction='make', instanceName='decisionTable_35', className='ResponseRequester', args=[]}</instruction>
+        <slimResult>pass(Response Requester.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_35_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Requester.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_35_4', instruction='call', instanceName='decisionTable_35', methodName='setUri', args=[HttpLinkPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_35_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_35_6', instruction='call', instanceName='decisionTable_35', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_35_6</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_36_0', instruction='make', instanceName='decisionTable_36', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_36_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_36_4', instruction='call', instanceName='decisionTable_36', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_36_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_36_5', instruction='call', instanceName='decisionTable_36', methodName='setPattern', args=[&lt;a href="http://localhost:8080/page"&gt;tag&lt;/a&gt; works fine.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_36_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_36_6', instruction='call', instanceName='decisionTable_36', methodName='setValue', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_36_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_36_8', instruction='call', instanceName='decisionTable_36', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_36_8</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_37_0', instruction='make', instanceName='decisionTable_37', className='PageCreator', args=[]}</instruction>
+        <slimResult>pass(Page creator.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_37_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page creator.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_37_4', instruction='call', instanceName='decisionTable_37', methodName='setPageName', args=[SomePage.ParentPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_37_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_37_5', instruction='call', instanceName='decisionTable_37', methodName='setPageContents', args=[!define HOST {localhost:8080}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_37_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_37_6', instruction='call', instanceName='decisionTable_37', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_37_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_37_8', instruction='call', instanceName='decisionTable_37', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_37_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_37_10', instruction='call', instanceName='decisionTable_37', methodName='setPageName', args=[SomePage.ParentPage.ChildPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_37_10</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_37_11', instruction='call', instanceName='decisionTable_37', methodName='setPageContents', args=[[[tag][http://${HOST}/page]] works fine.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_37_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_37_12', instruction='call', instanceName='decisionTable_37', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_37_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_37_14', instruction='call', instanceName='decisionTable_37', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_37_14</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_38_0', instruction='make', instanceName='decisionTable_38', className='ResponseRequester', args=[]}</instruction>
+        <slimResult>pass(Response Requester.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_38_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Requester.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_38_4', instruction='call', instanceName='decisionTable_38', methodName='setUri', args=[SomePage.ParentPage.ChildPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_38_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_38_6', instruction='call', instanceName='decisionTable_38', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_38_6</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_39_0', instruction='make', instanceName='decisionTable_39', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_39_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_39_4', instruction='call', instanceName='decisionTable_39', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_39_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_39_5', instruction='call', instanceName='decisionTable_39', methodName='setPattern', args=[&lt;a href="http://localhost:8080/page"&gt;tag&lt;/a&gt; works fine.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_39_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_39_6', instruction='call', instanceName='decisionTable_39', methodName='setValue', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_39_6</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_39_8', instruction='call', instanceName='decisionTable_39', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_39_8</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_0', instruction='make', instanceName='decisionTable_40', className='PageCreator', args=[]}</instruction>
+        <slimResult>pass(Page creator.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_40_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page creator.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_4', instruction='call', instanceName='decisionTable_40', methodName='setPageName', args=[PageLink2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_40_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_5', instruction='call', instanceName='decisionTable_40', methodName='setPageContents', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_40_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_6', instruction='call', instanceName='decisionTable_40', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_40_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_8', instruction='call', instanceName='decisionTable_40', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_40_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_10', instruction='call', instanceName='decisionTable_40', methodName='setPageName', args=[PageLink4]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_40_10</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_11', instruction='call', instanceName='decisionTable_40', methodName='setPageContents', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_40_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_12', instruction='call', instanceName='decisionTable_40', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_40_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_14', instruction='call', instanceName='decisionTable_40', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_40_14</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_16', instruction='call', instanceName='decisionTable_40', methodName='setPageName', args=[PageLink10]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_40_16</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_17', instruction='call', instanceName='decisionTable_40', methodName='setPageContents', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_40_17</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_18', instruction='call', instanceName='decisionTable_40', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_40_18</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_40_20', instruction='call', instanceName='decisionTable_40', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_40_20</instructionId>
+                    <col>3</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_41_0', instruction='make', instanceName='scriptTableActor', className='PageBuilder', args=[]}</instruction>
+        <slimResult>pass(Page Builder)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_41_0</instructionId>
+                    <col>1</col>
+                              <row>1</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page Builder</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_41_1', instruction='call', instanceName='scriptTableActor', methodName='line', args=[!define X {5}]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_41_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_41_2', instruction='call', instanceName='scriptTableActor', methodName='line', args=[!define Y (4)]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_41_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_41_3', instruction='call', instanceName='scriptTableActor', methodName='line', args=[!define EXPR (${=3+2-1=})]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_41_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_41_4', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag][PageLink${= 3 - 2 + 1 =}]] works fine.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_41_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_41_5', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag][PageLink${EXPR}]] works too.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_41_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_41_6', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag][PageLink${=${X}+${Y}+1=}]] works as well.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_41_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_41_7', instruction='call', instanceName='scriptTableActor', methodName='page', args=[HttpExprPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_41_7</instructionId>
+                    <col>0</col>
+                              <row>8</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_42_0', instruction='make', instanceName='decisionTable_42', className='ResponseRequester', args=[]}</instruction>
+        <slimResult>pass(Response Requester.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_42_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Requester.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_42_4', instruction='call', instanceName='decisionTable_42', methodName='setUri', args=[HttpExprPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_42_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_42_6', instruction='call', instanceName='decisionTable_42', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_42_6</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_42_7', instruction='call', instanceName='decisionTable_42', methodName='contents', args=[]}</instruction>
+        <slimResult>ignore(&lt;pre&gt;HTTP/1.1 200 OK
+Content-Length: 6404
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+  &amp;lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&amp;gt;
+  &amp;lt;title&amp;gt;HttpExprPage&amp;lt;/title&amp;gt;
+    &amp;lt;!--[if lt IE 9]&amp;gt;
+   &amp;lt;script&amp;gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &amp;lt;/script&amp;gt;
+  &amp;lt;![endif]--&amp;gt;
+  
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_wiki.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_pages.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_straight.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/question.mark/question.mark.css" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.base" href="/" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/editor.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="shortcut icon" type="image/png" href="/files/fitnesse/images/favicon.png" /&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/jquery-1.7.2.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse_straight.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body class="wikiPage"&amp;gt;
+
+  &amp;lt;header&amp;gt;
+   &amp;lt;a href="/FrontPage" id="art_niche"&amp;gt;&amp;lt;span&amp;gt;FitNesse&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h1&amp;gt;HttpExprPage&amp;lt;/h1&amp;gt;
+
+
+
+  &amp;lt;/header&amp;gt;
+  
+    
+  &amp;lt;nav&amp;gt;
+   &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?edit" accesskey="e"&amp;gt;Edit&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   
+  &amp;lt;li id="add" aria-haspopup="true"&amp;gt;&amp;lt;a href="HttpExprPage?new" class="label"&amp;gt;Add&amp;lt;/a&amp;gt;
+  &amp;lt;ul&amp;gt;
+     &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+  
+ &amp;lt;li id="tools" aria-haspopup="true"&amp;gt;&amp;lt;a href="#" class="label"&amp;gt;Tools&amp;lt;/a&amp;gt;
+      &amp;lt;ul&amp;gt;
+     &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?properties" accesskey="p"&amp;gt;Properties&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?whereUsed" accesskey="w"&amp;gt;Where Used&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?versions" accesskey="v"&amp;gt;Versions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="HttpExprPage?refactor&amp;amp;amp;type=rename"&amp;gt;Rename&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?refactor&amp;amp;amp;type=move"&amp;gt;Move&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?refactor&amp;amp;amp;type=replace"&amp;gt;Replace&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?deletePage"&amp;gt;Delete&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li  class="divider"&amp;gt;&amp;lt;a href="/files" accesskey="f"&amp;gt;Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="?searchForm" accesskey="s"&amp;gt;Search&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="/RecentChanges" accesskey=""&amp;gt;Recent Changes&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  
+      
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="/FitNesse.UserGuide" accesskey=""&amp;gt;User Guide&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+  &amp;lt;/nav&amp;gt;
+  
+  &amp;lt;article&amp;gt;
+   &amp;lt;span class="meta"&amp;gt;variable defined: X=5&amp;lt;/span&amp;gt;
+&amp;lt;br/&amp;gt;&amp;lt;span class="meta"&amp;gt;variable defined: Y=4&amp;lt;/span&amp;gt;
+&amp;lt;br/&amp;gt;&amp;lt;span class="meta"&amp;gt;variable defined: EXPR=${=3+2-1=}&amp;lt;/span&amp;gt;
+&amp;lt;br/&amp;gt;&amp;lt;a href="PageLink2"&amp;gt;tag&amp;lt;/a&amp;gt; works fine.&amp;lt;br/&amp;gt;&amp;lt;a href="PageLink4"&amp;gt;tag&amp;lt;/a&amp;gt; works too.&amp;lt;br/&amp;gt;&amp;lt;a href="PageLink10"&amp;gt;tag&amp;lt;/a&amp;gt; works as well.&amp;lt;br/&amp;gt;
+
+&amp;lt;div id="helpUnderlay" class="help-underlay"&amp;gt;
+    &amp;lt;div id="helpModal" class="help-modal"&amp;gt;
+        &amp;lt;h1&amp;gt;Keyboard Shortcuts &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;&amp;lt;/h1&amp;gt;
+        &amp;lt;div id="helpClose" class="help-close"&amp;gt;&amp;amp;times;&amp;lt;/div&amp;gt;
+        &amp;lt;div id="helpModalContent" class="help-modal-content"&amp;gt;
+            &amp;lt;div id="helpListWrap" class="help-list-wrap"&amp;gt;
+                &amp;lt;ul class="help-list"&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;t&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Test&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;e&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Edit page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Add new page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;p&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Properties&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;w&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Where used?&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Focus on search bar&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;s&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Open search page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;g&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;u&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Go to User Guide&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script src="/files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src="/files/fitnesse/question.mark/question.mark.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script type="text/javascript"&amp;gt;
+
+  
+        Mousetrap.bind('e', function() { window.location.href ="HttpExprPage?edit"; });
+        Mousetrap.bind('a', function() { window.location.href ="HttpExprPage?new"; });
+        Mousetrap.bind('p', function() { window.location.href ="HttpExprPage?properties"; });
+        Mousetrap.bind('w', function() { window.location.href ="HttpExprPage?whereUsed"; });
+        Mousetrap.bind('v', function() { window.location.href ="HttpExprPage?versions"; });
+        Mousetrap.bind('s', function() { window.location.href ="HttpExprPage?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+        Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+  
+&amp;lt;/script&amp;gt;
+
+  &amp;lt;/article&amp;gt;
+  
+    &amp;lt;footer&amp;gt;
+     &amp;lt;/footer&amp;gt;
+  
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>decisionTable_42_7</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>&lt;pre&gt;HTTP/1.1 200 OK
+Content-Length: 6404
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+  &amp;lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&amp;gt;
+  &amp;lt;title&amp;gt;HttpExprPage&amp;lt;/title&amp;gt;
+    &amp;lt;!--[if lt IE 9]&amp;gt;
+   &amp;lt;script&amp;gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &amp;lt;/script&amp;gt;
+  &amp;lt;![endif]--&amp;gt;
+  
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_wiki.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_pages.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_straight.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/question.mark/question.mark.css" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.base" href="/" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/editor.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="shortcut icon" type="image/png" href="/files/fitnesse/images/favicon.png" /&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/jquery-1.7.2.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse_straight.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body class="wikiPage"&amp;gt;
+
+  &amp;lt;header&amp;gt;
+   &amp;lt;a href="/FrontPage" id="art_niche"&amp;gt;&amp;lt;span&amp;gt;FitNesse&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h1&amp;gt;HttpExprPage&amp;lt;/h1&amp;gt;
+
+
+
+  &amp;lt;/header&amp;gt;
+  
+    
+  &amp;lt;nav&amp;gt;
+   &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?edit" accesskey="e"&amp;gt;Edit&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   
+  &amp;lt;li id="add" aria-haspopup="true"&amp;gt;&amp;lt;a href="HttpExprPage?new" class="label"&amp;gt;Add&amp;lt;/a&amp;gt;
+  &amp;lt;ul&amp;gt;
+     &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+  
+ &amp;lt;li id="tools" aria-haspopup="true"&amp;gt;&amp;lt;a href="#" class="label"&amp;gt;Tools&amp;lt;/a&amp;gt;
+      &amp;lt;ul&amp;gt;
+     &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?properties" accesskey="p"&amp;gt;Properties&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?whereUsed" accesskey="w"&amp;gt;Where Used&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?versions" accesskey="v"&amp;gt;Versions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="HttpExprPage?refactor&amp;amp;amp;type=rename"&amp;gt;Rename&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?refactor&amp;amp;amp;type=move"&amp;gt;Move&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?refactor&amp;amp;amp;type=replace"&amp;gt;Replace&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="HttpExprPage?deletePage"&amp;gt;Delete&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li  class="divider"&amp;gt;&amp;lt;a href="/files" accesskey="f"&amp;gt;Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="?searchForm" accesskey="s"&amp;gt;Search&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="/RecentChanges" accesskey=""&amp;gt;Recent Changes&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  
+      
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="/FitNesse.UserGuide" accesskey=""&amp;gt;User Guide&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+  &amp;lt;/nav&amp;gt;
+  
+  &amp;lt;article&amp;gt;
+   &amp;lt;span class="meta"&amp;gt;variable defined: X=5&amp;lt;/span&amp;gt;
+&amp;lt;br/&amp;gt;&amp;lt;span class="meta"&amp;gt;variable defined: Y=4&amp;lt;/span&amp;gt;
+&amp;lt;br/&amp;gt;&amp;lt;span class="meta"&amp;gt;variable defined: EXPR=${=3+2-1=}&amp;lt;/span&amp;gt;
+&amp;lt;br/&amp;gt;&amp;lt;a href="PageLink2"&amp;gt;tag&amp;lt;/a&amp;gt; works fine.&amp;lt;br/&amp;gt;&amp;lt;a href="PageLink4"&amp;gt;tag&amp;lt;/a&amp;gt; works too.&amp;lt;br/&amp;gt;&amp;lt;a href="PageLink10"&amp;gt;tag&amp;lt;/a&amp;gt; works as well.&amp;lt;br/&amp;gt;
+
+&amp;lt;div id="helpUnderlay" class="help-underlay"&amp;gt;
+    &amp;lt;div id="helpModal" class="help-modal"&amp;gt;
+        &amp;lt;h1&amp;gt;Keyboard Shortcuts &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;&amp;lt;/h1&amp;gt;
+        &amp;lt;div id="helpClose" class="help-close"&amp;gt;&amp;amp;times;&amp;lt;/div&amp;gt;
+        &amp;lt;div id="helpModalContent" class="help-modal-content"&amp;gt;
+            &amp;lt;div id="helpListWrap" class="help-list-wrap"&amp;gt;
+                &amp;lt;ul class="help-list"&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;t&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Test&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;e&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Edit page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Add new page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;p&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Properties&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;w&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Where used?&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Focus on search bar&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;s&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Open search page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;g&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;u&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Go to User Guide&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script src="/files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src="/files/fitnesse/question.mark/question.mark.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script type="text/javascript"&amp;gt;
+
+  
+        Mousetrap.bind('e', function() { window.location.href ="HttpExprPage?edit"; });
+        Mousetrap.bind('a', function() { window.location.href ="HttpExprPage?new"; });
+        Mousetrap.bind('p', function() { window.location.href ="HttpExprPage?properties"; });
+        Mousetrap.bind('w', function() { window.location.href ="HttpExprPage?whereUsed"; });
+        Mousetrap.bind('v', function() { window.location.href ="HttpExprPage?versions"; });
+        Mousetrap.bind('s', function() { window.location.href ="HttpExprPage?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+        Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+  
+&amp;lt;/script&amp;gt;
+
+  &amp;lt;/article&amp;gt;
+  
+    &amp;lt;footer&amp;gt;
+     &amp;lt;/footer&amp;gt;
+  
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_43_0', instruction='make', instanceName='decisionTable_43', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_43_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_43_4', instruction='call', instanceName='decisionTable_43', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_43_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_43_5', instruction='call', instanceName='decisionTable_43', methodName='setPattern', args=[&lt;a href="PageLink2"&gt;tag&lt;/a&gt; works fine.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_43_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_43_7', instruction='call', instanceName='decisionTable_43', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_43_7</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_43_9', instruction='call', instanceName='decisionTable_43', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_43_9</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_43_10', instruction='call', instanceName='decisionTable_43', methodName='setPattern', args=[&lt;a href="PageLink4"&gt;tag&lt;/a&gt; works too.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_43_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_43_12', instruction='call', instanceName='decisionTable_43', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_43_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_43_14', instruction='call', instanceName='decisionTable_43', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_43_14</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_43_15', instruction='call', instanceName='decisionTable_43', methodName='setPattern', args=[&lt;a href="PageLink10"&gt;tag&lt;/a&gt; works as well.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_43_15</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_43_17', instruction='call', instanceName='decisionTable_43', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_43_17</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_44_0', instruction='make', instanceName='decisionTable_44', className='PageCreator', args=[]}</instruction>
+        <slimResult>pass(Page creator.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_44_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page creator.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_44_4', instruction='call', instanceName='decisionTable_44', methodName='setPageName', args=[QueryPageRoot]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_44_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_44_5', instruction='call', instanceName='decisionTable_44', methodName='setPageContents', args=[!anchor QPLabel   ]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_44_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_44_6', instruction='call', instanceName='decisionTable_44', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_44_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_44_8', instruction='call', instanceName='decisionTable_44', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_44_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_44_10', instruction='call', instanceName='decisionTable_44', methodName='setPageName', args=[QueryPageRoot.TopPage]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_44_10</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_44_11', instruction='call', instanceName='decisionTable_44', methodName='setPageContents', args=[!anchor QPTopLabel]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_44_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_44_12', instruction='call', instanceName='decisionTable_44', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_44_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_44_14', instruction='call', instanceName='decisionTable_44', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_44_14</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_0', instruction='make', instanceName='scriptTableActor', className='PageBuilder', args=[]}</instruction>
+        <slimResult>pass(Page Builder)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_45_0</instructionId>
+                    <col>1</col>
+                              <row>1</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page Builder</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_1', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag1 ][TopPage?edit]] has query.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_2', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag2 ][TopPage?edit#QPTopLabel]] has query and frag.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_3', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag3 ][TopPage#QPTopLabel]] has fragment.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_4', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag4 ][&lt;QueryPageRoot.TopPage?edit]] back has query.&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_4</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_5', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag5 ][.QueryPageRoot.TopPage?edit]] root has query.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_5</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_6', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag6 ][&lt;QueryPageRoot.TopPage?edit#QPTopLabel]] back has query and frag.&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_6</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_7', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag7 ][&lt;QueryPageRoot.TopPage#QPTopLabel]] back has fragment.&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_7</instructionId>
+                    <col>0</col>
+                              <row>8</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_8', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag8 ][&gt;ChildFrag?edit]] child has query.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_8</instructionId>
+                    <col>0</col>
+                              <row>9</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_9', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag9 ][&gt;ChildFrag?edit#QPTopLabel]] child has query and frag.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_9</instructionId>
+                    <col>0</col>
+                              <row>10</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_10', instruction='call', instanceName='scriptTableActor', methodName='line', args=[[[tag10][&gt;ChildFrag#QPTopLabel]] child has fragment.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_10</instructionId>
+                    <col>0</col>
+                              <row>11</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_45_11', instruction='call', instanceName='scriptTableActor', methodName='page', args=[QueryPageRoot.QueryFragmentLinks]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_45_11</instructionId>
+                    <col>0</col>
+                              <row>12</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_46_0', instruction='make', instanceName='decisionTable_46', className='PageCreator', args=[]}</instruction>
+        <slimResult>pass(Page creator.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_46_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Page creator.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_46_4', instruction='call', instanceName='decisionTable_46', methodName='setPageName', args=[QueryPageRoot.QueryFragmentLinks.ChildFrag]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_46_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_46_5', instruction='call', instanceName='decisionTable_46', methodName='setPageContents', args=[!anchor QPChild]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_46_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_46_6', instruction='call', instanceName='decisionTable_46', methodName='setPageAttributes', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_46_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_46_8', instruction='call', instanceName='decisionTable_46', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_46_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_47_0', instruction='make', instanceName='decisionTable_47', className='ResponseRequester', args=[]}</instruction>
+        <slimResult>pass(Response Requester.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_47_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Requester.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_47_4', instruction='call', instanceName='decisionTable_47', methodName='setUri', args=[QueryPageRoot.QueryFragmentLinks]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_47_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_47_6', instruction='call', instanceName='decisionTable_47', methodName='valid', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_47_6</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_47_7', instruction='call', instanceName='decisionTable_47', methodName='contents', args=[]}</instruction>
+        <slimResult>ignore(&lt;pre&gt;HTTP/1.1 200 OK
+Content-Length: 7294
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+  &amp;lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&amp;gt;
+  &amp;lt;title&amp;gt;QueryPageRoot.QueryFragmentLinks&amp;lt;/title&amp;gt;
+    &amp;lt;!--[if lt IE 9]&amp;gt;
+   &amp;lt;script&amp;gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &amp;lt;/script&amp;gt;
+  &amp;lt;![endif]--&amp;gt;
+  
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_wiki.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_pages.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_straight.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/question.mark/question.mark.css" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.base" href="/" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/editor.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="shortcut icon" type="image/png" href="/files/fitnesse/images/favicon.png" /&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/jquery-1.7.2.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse_straight.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body class="wikiPage"&amp;gt;
+
+  &amp;lt;header&amp;gt;
+   &amp;lt;a href="/FrontPage" id="art_niche"&amp;gt;&amp;lt;span&amp;gt;FitNesse&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+ &amp;lt;li&amp;gt;&amp;lt;a href="/QueryPageRoot"&amp;gt;QueryPageRoot&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h1&amp;gt;QueryFragmentLinks&amp;lt;/h1&amp;gt;
+
+
+
+  &amp;lt;/header&amp;gt;
+  
+    
+  &amp;lt;nav&amp;gt;
+   &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?edit" accesskey="e"&amp;gt;Edit&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   
+  &amp;lt;li id="add" aria-haspopup="true"&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?new" class="label"&amp;gt;Add&amp;lt;/a&amp;gt;
+  &amp;lt;ul&amp;gt;
+     &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+  
+ &amp;lt;li id="tools" aria-haspopup="true"&amp;gt;&amp;lt;a href="#" class="label"&amp;gt;Tools&amp;lt;/a&amp;gt;
+      &amp;lt;ul&amp;gt;
+     &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?properties" accesskey="p"&amp;gt;Properties&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?whereUsed" accesskey="w"&amp;gt;Where Used&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?versions" accesskey="v"&amp;gt;Versions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?refactor&amp;amp;amp;type=rename"&amp;gt;Rename&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?refactor&amp;amp;amp;type=move"&amp;gt;Move&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?refactor&amp;amp;amp;type=replace"&amp;gt;Replace&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?deletePage"&amp;gt;Delete&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li  class="divider"&amp;gt;&amp;lt;a href="/files" accesskey="f"&amp;gt;Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="?searchForm" accesskey="s"&amp;gt;Search&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="/RecentChanges" accesskey=""&amp;gt;Recent Changes&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  
+      
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="/FitNesse.UserGuide" accesskey=""&amp;gt;User Guide&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+  &amp;lt;/nav&amp;gt;
+  
+  &amp;lt;article&amp;gt;
+   &amp;lt;a href="QueryPageRoot.TopPage?edit"&amp;gt;tag1 &amp;lt;/a&amp;gt; has query.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit#QPTopLabel"&amp;gt;tag2 &amp;lt;/a&amp;gt; has query and frag.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage#QPTopLabel"&amp;gt;tag3 &amp;lt;/a&amp;gt; has fragment.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit"&amp;gt;tag4 &amp;lt;/a&amp;gt; back has query.&amp;amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit"&amp;gt;tag5 &amp;lt;/a&amp;gt; root has query.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit#QPTopLabel"&amp;gt;tag6 &amp;lt;/a&amp;gt; back has query and frag.&amp;amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage#QPTopLabel"&amp;gt;tag7 &amp;lt;/a&amp;gt; back has fragment.&amp;amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks.ChildFrag?edit"&amp;gt;tag8 &amp;lt;/a&amp;gt; child has query.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks.ChildFrag?edit#QPTopLabel"&amp;gt;tag9 &amp;lt;/a&amp;gt; child has query and frag.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks.ChildFrag#QPTopLabel"&amp;gt;tag10&amp;lt;/a&amp;gt; child has fragment.&amp;lt;br/&amp;gt;
+
+&amp;lt;div id="helpUnderlay" class="help-underlay"&amp;gt;
+    &amp;lt;div id="helpModal" class="help-modal"&amp;gt;
+        &amp;lt;h1&amp;gt;Keyboard Shortcuts &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;&amp;lt;/h1&amp;gt;
+        &amp;lt;div id="helpClose" class="help-close"&amp;gt;&amp;amp;times;&amp;lt;/div&amp;gt;
+        &amp;lt;div id="helpModalContent" class="help-modal-content"&amp;gt;
+            &amp;lt;div id="helpListWrap" class="help-list-wrap"&amp;gt;
+                &amp;lt;ul class="help-list"&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;t&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Test&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;e&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Edit page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Add new page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;p&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Properties&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;w&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Where used?&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Focus on search bar&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;s&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Open search page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;g&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;u&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Go to User Guide&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script src="/files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src="/files/fitnesse/question.mark/question.mark.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script type="text/javascript"&amp;gt;
+
+  
+        Mousetrap.bind('e', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?edit"; });
+        Mousetrap.bind('a', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?new"; });
+        Mousetrap.bind('p', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?properties"; });
+        Mousetrap.bind('w', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?whereUsed"; });
+        Mousetrap.bind('v', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?versions"; });
+        Mousetrap.bind('s', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+        Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+  
+&amp;lt;/script&amp;gt;
+
+  &amp;lt;/article&amp;gt;
+  
+    &amp;lt;footer&amp;gt;
+     &amp;lt;/footer&amp;gt;
+  
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>decisionTable_47_7</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>&lt;pre&gt;HTTP/1.1 200 OK
+Content-Length: 7294
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+  &amp;lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&amp;gt;
+  &amp;lt;title&amp;gt;QueryPageRoot.QueryFragmentLinks&amp;lt;/title&amp;gt;
+    &amp;lt;!--[if lt IE 9]&amp;gt;
+   &amp;lt;script&amp;gt;
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   &amp;lt;/script&amp;gt;
+  &amp;lt;![endif]--&amp;gt;
+  
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_wiki.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_pages.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse_straight.css" /&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/&amp;gt;
+  &amp;lt;link rel="stylesheet" type="text/css" href="/files/fitnesse/question.mark/question.mark.css" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.base" href="/" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/css/fitnesse.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="wysiwyg.stylesheet" type="text/css" href="/files/fitnesse/wysiwyg/editor.css" media="screen" /&amp;gt;
+  &amp;lt;link rel="shortcut icon" type="image/png" href="/files/fitnesse/images/favicon.png" /&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/jquery-1.7.2.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src="/files/fitnesse/javascript/fitnesse_straight.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body class="wikiPage"&amp;gt;
+
+  &amp;lt;header&amp;gt;
+   &amp;lt;a href="/FrontPage" id="art_niche"&amp;gt;&amp;lt;span&amp;gt;FitNesse&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+
+&amp;lt;ul&amp;gt;
+ &amp;lt;li&amp;gt;&amp;lt;a href="/QueryPageRoot"&amp;gt;QueryPageRoot&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h1&amp;gt;QueryFragmentLinks&amp;lt;/h1&amp;gt;
+
+
+
+  &amp;lt;/header&amp;gt;
+  
+    
+  &amp;lt;nav&amp;gt;
+   &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?edit" accesskey="e"&amp;gt;Edit&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   
+  &amp;lt;li id="add" aria-haspopup="true"&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?new" class="label"&amp;gt;Add&amp;lt;/a&amp;gt;
+  &amp;lt;ul&amp;gt;
+     &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+  
+ &amp;lt;li id="tools" aria-haspopup="true"&amp;gt;&amp;lt;a href="#" class="label"&amp;gt;Tools&amp;lt;/a&amp;gt;
+      &amp;lt;ul&amp;gt;
+     &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?properties" accesskey="p"&amp;gt;Properties&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?whereUsed" accesskey="w"&amp;gt;Where Used&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?versions" accesskey="v"&amp;gt;Versions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?refactor&amp;amp;amp;type=rename"&amp;gt;Rename&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?refactor&amp;amp;amp;type=move"&amp;gt;Move&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?refactor&amp;amp;amp;type=replace"&amp;gt;Replace&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks?deletePage"&amp;gt;Delete&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li  class="divider"&amp;gt;&amp;lt;a href="/files" accesskey="f"&amp;gt;Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="?searchForm" accesskey="s"&amp;gt;Search&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;a href="/RecentChanges" accesskey=""&amp;gt;Recent Changes&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  
+      
+     &amp;lt;li class="divider"&amp;gt;&amp;lt;a href="/FitNesse.UserGuide" accesskey=""&amp;gt;User Guide&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+ &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+  &amp;lt;/nav&amp;gt;
+  
+  &amp;lt;article&amp;gt;
+   &amp;lt;a href="QueryPageRoot.TopPage?edit"&amp;gt;tag1 &amp;lt;/a&amp;gt; has query.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit#QPTopLabel"&amp;gt;tag2 &amp;lt;/a&amp;gt; has query and frag.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage#QPTopLabel"&amp;gt;tag3 &amp;lt;/a&amp;gt; has fragment.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit"&amp;gt;tag4 &amp;lt;/a&amp;gt; back has query.&amp;amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit"&amp;gt;tag5 &amp;lt;/a&amp;gt; root has query.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage?edit#QPTopLabel"&amp;gt;tag6 &amp;lt;/a&amp;gt; back has query and frag.&amp;amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.TopPage#QPTopLabel"&amp;gt;tag7 &amp;lt;/a&amp;gt; back has fragment.&amp;amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks.ChildFrag?edit"&amp;gt;tag8 &amp;lt;/a&amp;gt; child has query.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks.ChildFrag?edit#QPTopLabel"&amp;gt;tag9 &amp;lt;/a&amp;gt; child has query and frag.&amp;lt;br/&amp;gt;&amp;lt;a href="QueryPageRoot.QueryFragmentLinks.ChildFrag#QPTopLabel"&amp;gt;tag10&amp;lt;/a&amp;gt; child has fragment.&amp;lt;br/&amp;gt;
+
+&amp;lt;div id="helpUnderlay" class="help-underlay"&amp;gt;
+    &amp;lt;div id="helpModal" class="help-modal"&amp;gt;
+        &amp;lt;h1&amp;gt;Keyboard Shortcuts &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;?&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;&amp;lt;/h1&amp;gt;
+        &amp;lt;div id="helpClose" class="help-close"&amp;gt;&amp;amp;times;&amp;lt;/div&amp;gt;
+        &amp;lt;div id="helpModalContent" class="help-modal-content"&amp;gt;
+            &amp;lt;div id="helpListWrap" class="help-list-wrap"&amp;gt;
+                &amp;lt;ul class="help-list"&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;t&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Test&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;e&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Edit page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Add new page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;p&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Properties&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;w&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Where used?&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Focus on search bar&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;s&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Open search page&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li class="help-key-unit"&amp;gt;
+                        &amp;lt;kbd class="help-key"&amp;gt;&amp;lt;span&amp;gt;g&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;u&amp;lt;/span&amp;gt;&amp;lt;/kbd&amp;gt;
+                        &amp;lt;span class="help-key-def"&amp;gt;Go to User Guide&amp;lt;/span&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script src="/files/fitnesse/javascript/mousetrap.min.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src="/files/fitnesse/question.mark/question.mark.js" type="text/javascript"&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;script type="text/javascript"&amp;gt;
+
+  
+        Mousetrap.bind('e', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?edit"; });
+        Mousetrap.bind('a', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?new"; });
+        Mousetrap.bind('p', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?properties"; });
+        Mousetrap.bind('w', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?whereUsed"; });
+        Mousetrap.bind('v', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?versions"; });
+        Mousetrap.bind('s', function() { window.location.href ="QueryPageRoot.QueryFragmentLinks?searchForm"; });
+    Mousetrap.bind('/', function() { 
+      document.getElementById('searchString').focus();
+      return false;  // stops the / character appearing in search box
+    });
+        Mousetrap.bind('g u', function() { window.location.href =".FitNesse.UserGuide"; });
+  
+&amp;lt;/script&amp;gt;
+
+  &amp;lt;/article&amp;gt;
+  
+    &amp;lt;footer&amp;gt;
+     &amp;lt;/footer&amp;gt;
+  
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_0', instruction='make', instanceName='decisionTable_48', className='ResponseExaminer', args=[]}</instruction>
+        <slimResult>pass(Response Examiner.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Response Examiner.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_4', instruction='call', instanceName='decisionTable_48', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_5', instruction='call', instanceName='decisionTable_48', methodName='setPattern', args=[&lt;a href="QueryPageRoot\.TopPage\?edit"&gt;tag1 &lt;/a&gt; has query.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_7', instruction='call', instanceName='decisionTable_48', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_7</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_9', instruction='call', instanceName='decisionTable_48', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_9</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_10', instruction='call', instanceName='decisionTable_48', methodName='setPattern', args=[&lt;a href="QueryPageRoot\.TopPage\?edit#QPTopLabel"&gt;tag2 &lt;/a&gt; has query and frag.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_12', instruction='call', instanceName='decisionTable_48', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_14', instruction='call', instanceName='decisionTable_48', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_14</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_15', instruction='call', instanceName='decisionTable_48', methodName='setPattern', args=[&lt;a href="QueryPageRoot\.TopPage#QPTopLabel"&gt;tag3 &lt;/a&gt; has fragment.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_15</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_17', instruction='call', instanceName='decisionTable_48', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_17</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_19', instruction='call', instanceName='decisionTable_48', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_19</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_20', instruction='call', instanceName='decisionTable_48', methodName='setPattern', args=[&lt;a href="QueryPageRoot\.TopPage\?edit"&gt;tag4 &lt;/a&gt; back has query.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_20</instructionId>
+                    <col>1</col>
+                              <row>5</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_22', instruction='call', instanceName='decisionTable_48', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_22</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_24', instruction='call', instanceName='decisionTable_48', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_24</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_25', instruction='call', instanceName='decisionTable_48', methodName='setPattern', args=[&lt;a href="QueryPageRoot\.TopPage\?edit"&gt;tag5 &lt;/a&gt; root has query.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_25</instructionId>
+                    <col>1</col>
+                              <row>6</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_27', instruction='call', instanceName='decisionTable_48', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_27</instructionId>
+                    <col>2</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_29', instruction='call', instanceName='decisionTable_48', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_29</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_30', instruction='call', instanceName='decisionTable_48', methodName='setPattern', args=[&lt;a href="QueryPageRoot\.TopPage\?edit#QPTopLabel"&gt;tag6 &lt;/a&gt; back has query and frag.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_30</instructionId>
+                    <col>1</col>
+                              <row>7</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_32', instruction='call', instanceName='decisionTable_48', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_32</instructionId>
+                    <col>2</col>
+                              <row>7</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_34', instruction='call', instanceName='decisionTable_48', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_34</instructionId>
+                    <col>0</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_35', instruction='call', instanceName='decisionTable_48', methodName='setPattern', args=[&lt;a href="QueryPageRoot\.TopPage#QPTopLabel"&gt;tag7 &lt;/a&gt; back has fragment.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_35</instructionId>
+                    <col>1</col>
+                              <row>8</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_37', instruction='call', instanceName='decisionTable_48', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_37</instructionId>
+                    <col>2</col>
+                              <row>8</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_39', instruction='call', instanceName='decisionTable_48', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_39</instructionId>
+                    <col>0</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_40', instruction='call', instanceName='decisionTable_48', methodName='setPattern', args=[&lt;a href="QueryPageRoot\.QueryFragmentLinks\.ChildFrag\?edit"&gt;tag8 &lt;/a&gt; child has query.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_40</instructionId>
+                    <col>1</col>
+                              <row>9</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_42', instruction='call', instanceName='decisionTable_48', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_42</instructionId>
+                    <col>2</col>
+                              <row>9</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_44', instruction='call', instanceName='decisionTable_48', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_44</instructionId>
+                    <col>0</col>
+                              <row>10</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_45', instruction='call', instanceName='decisionTable_48', methodName='setPattern', args=[&lt;a href="QueryPageRoot\.QueryFragmentLinks\.ChildFrag\?edit#QPTopLabel"&gt;tag9 &lt;/a&gt; child has query and frag.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_45</instructionId>
+                    <col>1</col>
+                              <row>10</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_47', instruction='call', instanceName='decisionTable_48', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_47</instructionId>
+                    <col>2</col>
+                              <row>10</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_49', instruction='call', instanceName='decisionTable_48', methodName='setType', args=[contents]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_49</instructionId>
+                    <col>0</col>
+                              <row>11</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_50', instruction='call', instanceName='decisionTable_48', methodName='setPattern', args=[&lt;a href="QueryPageRoot\.QueryFragmentLinks\.ChildFrag#QPTopLabel"&gt;tag10&lt;/a&gt; child has fragment.]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_48_50</instructionId>
+                    <col>1</col>
+                              <row>11</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_48_52', instruction='call', instanceName='decisionTable_48', methodName='matches', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_48_52</instructionId>
+                    <col>2</col>
+                              <row>11</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_49_0', instruction='make', instanceName='decisionTable_49', className='TearDown', args=[]}</instruction>
+        <slimResult>pass(tear down)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_49_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>tear down</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+      <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>157</totalRunTimeInMillis>
+  
+</testResults>
+

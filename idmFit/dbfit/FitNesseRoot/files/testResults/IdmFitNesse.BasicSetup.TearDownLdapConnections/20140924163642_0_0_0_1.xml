@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFitNesse.BasicSetup.TearDownLdapConnections</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>4</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;de.guh.IdmFitnesse.ldap.LdapTeardownFixture&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;teardown&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;true&lt;hr&gt;&lt;pre&gt;&lt;div class="fit_stacktrace"&gt;java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextEntry(Unknown Source)
+	at java.util.HashMap$EntryIterator.next(Unknown Source)
+	at java.util.HashMap$EntryIterator.next(Unknown Source)
+	at de.guh.IdmFitnesse.ldap.LdapTeardownFixture.teardown(LdapTeardownFixture.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at fitlibrary.closure.MethodClosure.invoke(MethodClosure.java:49)
+	at fitlibrary.closure.CalledMethodTarget.invoke(CalledMethodTarget.java:80)
+	at fitlibrary.closure.CalledMethodTarget.invoke(CalledMethodTarget.java:118)
+	at fitlibrary.collection.CollectionSetUpTraverse.invokeMethod(CollectionSetUpTraverse.java:111)
+	at fitlibrary.collection.CollectionSetUpTraverse.processRow(CollectionSetUpTraverse.java:105)
+	at fitlibrary.collection.CollectionSetUpTraverse.interpretAfterFirstRow(CollectionSetUpTraverse.java:53)
+	at fitlibrary.collection.CollectionSetUpTraverse.interpretInFlow(CollectionSetUpTraverse.java:59)
+	at fitlibrary.DoFixture.interpretAfterFirstRow(DoFixture.java:46)
+	at fitlibrary.flow.DoFlowOnTable.runEvaluator(DoFlowOnTable.java:146)
+	at fitlibrary.flow.DoFlowOnTable.runTable(DoFlowOnTable.java:100)
+	at fitlibrary.flow.DoFlowOnTable.runTable(DoFlowOnTable.java:56)
+	at fitlibrary.flow.DoFlow.runTable(DoFlow.java:104)
+	at fitlibrary.flow.DoFlow.runSingleTable(DoFlow.java:89)
+	at fitlibrary.flow.DoFlowWithExtraTableAddedWhenNeeded.runStorytest(DoFlowWithExtraTableAddedWhenNeeded.java:33)
+	at fitlibrary.suite.BatchFitLibrary.doTables(BatchFitLibrary.java:92)
+	at fitlibrary.suite.BatchFitLibrary.doStorytest(BatchFitLibrary.java:50)
+	at fitlibrary.suite.BatchFitLibrary.doTables(BatchFitLibrary.java:107)
+	at fitlibrary.suite.FitLibraryServer.doTables(FitLibraryServer.java:36)
+	at fitlibrary.suite.FitLibraryServer.doTables(FitLibraryServer.java:28)
+	at fit.FitServerBridge.process(FitServerBridge.java:76)
+	at fit.FitServerBridge.run(FitServerBridge.java:60)
+	at fitlibrary.suite.FitLibraryServer.main(FitLibraryServer.java:54)
+&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>TearDownLdapConnections</relativePageName>
+          </result>
+      <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>4</totalRunTimeInMillis>
+  
+</testResults>
+

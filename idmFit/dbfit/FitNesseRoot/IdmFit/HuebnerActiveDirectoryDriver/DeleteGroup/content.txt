@@ -1,0 +1,16 @@
+!1 Gruppe löschen
+Wenn eine Gruppe im eDirectory gelöscht wird
+
+|script|Ldap Operation Script|metatree|
+|delete object; | ${scoped_meta_group} |
+|reject| object |${scoped_meta_group}|exists|
+|delete object; | ${unscoped_meta_group} |
+|reject| object |${unscoped_meta_group}|exists|
+
+wird sie nach kurzer Zeit
+| Sleep | 3000 |
+auch im AD gelöscht
+
+|script|Ldap Operation Script|ad|
+|reject| object |${scoped_ad_group}|exists|
+

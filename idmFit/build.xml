@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="IdmFit" default="dist" basedir=".">
+	<target name="dist">
+		<zip destfile="build/idmFit.zip" basedir="dbfit" includes="**" excludes="*.zip" update="true"/>
+		<jar destfile="tmp/IdmFit.jar" basedir="bin" />
+		<zip destfile="build/idmFit.zip" basedir="tmp" update="true">
+			<zipfileset dir="tmp/" includes="IdmFit.jar" fullpath="lib/IdmFit.jar"/>
+		</zip>
+	</target>
+</project>

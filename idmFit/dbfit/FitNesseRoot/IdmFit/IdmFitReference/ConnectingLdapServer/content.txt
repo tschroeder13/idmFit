@@ -1,0 +1,26 @@
+!contents -R2 -g -p -f -h
+!2 Connecting an LDAP Server
+
+Connecting an LDAP Server should something like this  
+
+|Ldap Connection Set Up|
+|connection name| bind username|bind password|server URL|
+|metatree|cn=adm,ou=sa,o=system|ENC(nHgy/NBECxliK78756zISw==)|ldaps://172.16.66.200:636|
+
+The Fixture will use clear text password when given, or decrypt any value in the Form ENC(<!-valueOfYourPassword-!>)
+Therefore it uses the following code from [[!-DbFit-!][.DbFit]]
+{{{	
+	Properties props = new Properties();
+	props.put("user", username);
+	props.put("password", new PropertiesLoader().parseValue(password));
+}}}
+
+Any LDAP connection should be closed at the end of each test or suite.
+You can close one, more or all connections with different constructors
+ * close one connection
+|Ldap Connection Tear Down|!-connectionName-!|
+ * close a list of connections
+|Ldap Connection Tear Down|[name1, name2]|
+ * close all connection with the default constructor
+|Ldap Connection Tear Down|
+

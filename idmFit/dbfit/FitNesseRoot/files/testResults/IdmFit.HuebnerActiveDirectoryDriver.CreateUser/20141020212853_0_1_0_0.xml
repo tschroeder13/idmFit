@@ -1,0 +1,433 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFit.HuebnerActiveDirectoryDriver.CreateUser</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <runTimeInMillis>15395</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;h1&gt;Erzeugen eines Users und hinzuf�gen zur ADUser Gruppe und setzen des PW&lt;/h1&gt;
+&lt;br/&gt;Im eDirectory wird ein User angelegt und das Universal (und damit das Distribution) Password gesetzt&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;create object&lt;/td&gt;
+		&lt;td class="error"&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td class="error"&gt;with class&lt;/td&gt;
+		&lt;td class="error"&gt;inetOrgPerson&lt;/td&gt;
+		&lt;td class="error"&gt;and attributes&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;sn&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Public&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;givenName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Joe&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;fullName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Joe Public&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="6"&gt;&lt;pre&gt;__EXCEPTION__:com.novell.ldapchai.exception.ChaiOperationException: [LDAP: error code 68 - NDS error: entry already exists (-606)]
+	at com.novell.ldapchai.exception.ChaiOperationException.forErrorMessage(ChaiOperationException.java:39) [ldapChai.jar]
+	at com.novell.ldapchai.provider.JNDIProviderImpl.convertNamingException(JNDIProviderImpl.java:1002) [ldapChai.jar]
+	at com.novell.ldapchai.provider.JNDIProviderImpl.createEntry(JNDIProviderImpl.java:277) [ldapChai.jar]
+	at com.novell.ldapchai.provider.JNDIProviderImpl.createEntry(JNDIProviderImpl.java:247) [ldapChai.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.AbstractWrapper.invoker(AbstractWrapper.java:80) [ldapChai.jar]
+	at com.novell.ldapchai.provider.FailOverWrapper.failOverInvoke(FailOverWrapper.java:173) [ldapChai.jar]
+	at com.novell.ldapchai.provider.FailOverWrapper.invoke(FailOverWrapper.java:134) [ldapChai.jar]
+	at com.sun.proxy.$Proxy6.createEntry(Unknown Source) [rt.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.AbstractWrapper.invoker(AbstractWrapper.java:80) [ldapChai.jar]
+	at com.novell.ldapchai.provider.WatchdogWrapper.invoke(WatchdogWrapper.java:219) [ldapChai.jar]
+	at com.sun.proxy.$Proxy6.createEntry(Unknown Source) [rt.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.StatisticsWrapper.invoke(StatisticsWrapper.java:121) [ldapChai.jar]
+	at com.sun.proxy.$Proxy6.createEntry(Unknown Source) [rt.jar]
+	at com.novell.ldapchai.provider.ChaiProvider$createEntry$0.call(Unknown Source) [n/a]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:124) [groovy-all-2.3.6.jar:2.3.6]
+	at idmfit.LdapOperationScript.createObjectWithClassAndAttributes(LdapOperationScript.groovy:34) [file:/C:/Users/tschroet/MyPrograms/luna/workspace/guhFitNesse/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:121) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:99) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:83) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:106) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:93) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:164) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:134) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:51) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td colspan="3"&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;set password&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;p4ssWort&lt;/td&gt;
+		&lt;td&gt;for&lt;/td&gt;
+		&lt;td colspan="3"&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;p4ssWort&lt;/td&gt;
+		&lt;td&gt;is correct for&lt;/td&gt;
+		&lt;td colspan="2"&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Dieser darf noch nicht ins AD transferiert werden&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Erst wenn im eDir der User zur Gruppe ADSYNC hinzukommt, &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;add user&lt;/td&gt;
+		&lt;td class="error"&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td class="error"&gt;to group&lt;/td&gt;
+		&lt;td class="error"&gt;cn=aduser,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:com.novell.ldapchai.exception.ChaiOperationException: [LDAP: error code 20 - NDS error: duplicate value (-614)]
+	at com.novell.ldapchai.exception.ChaiOperationException.forErrorMessage(ChaiOperationException.java:39) [ldapChai.jar]
+	at com.novell.ldapchai.provider.JNDIProviderImpl.convertNamingException(JNDIProviderImpl.java:1002) [ldapChai.jar]
+	at com.novell.ldapchai.provider.JNDIProviderImpl.writeStringAttribute(JNDIProviderImpl.java:736) [ldapChai.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.AbstractWrapper.invoker(AbstractWrapper.java:80) [ldapChai.jar]
+	at com.novell.ldapchai.provider.FailOverWrapper.failOverInvoke(FailOverWrapper.java:173) [ldapChai.jar]
+	at com.novell.ldapchai.provider.FailOverWrapper.invoke(FailOverWrapper.java:134) [ldapChai.jar]
+	at com.sun.proxy.$Proxy6.writeStringAttribute(Unknown Source) [rt.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.AbstractWrapper.invoker(AbstractWrapper.java:80) [ldapChai.jar]
+	at com.novell.ldapchai.provider.WatchdogWrapper.invoke(WatchdogWrapper.java:219) [ldapChai.jar]
+	at com.sun.proxy.$Proxy6.writeStringAttribute(Unknown Source) [rt.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.StatisticsWrapper.invoke(StatisticsWrapper.java:121) [ldapChai.jar]
+	at com.sun.proxy.$Proxy6.writeStringAttribute(Unknown Source) [rt.jar]
+	at com.novell.ldapchai.impl.AbstractChaiEntry.addAttribute(AbstractChaiEntry.java:161) [ldapChai.jar]
+	at com.novell.ldapchai.impl.edir.entry.EdirEntries.writeGroupMembership(EdirEntries.java:491) [ldapChai.jar]
+	at com.novell.ldapchai.impl.edir.entry.InetOrgPersonImpl.addGroupMembership(InetOrgPersonImpl.java:112) [ldapChai.jar]
+	at com.novell.ldapchai.ChaiUser$addGroupMembership$1.call(Unknown Source) [n/a]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116) [groovy-all-2.3.6.jar:2.3.6]
+	at idmfit.LdapOperationScript.addUserToGroup(LdapOperationScript.groovy:128) [file:/C:/Users/tschroet/MyPrograms/luna/workspace/guhFitNesse/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:121) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:99) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:83) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:106) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:93) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:164) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:134) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:51) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;wird er nach einer Wartezeit von 15 Sekunden&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;15000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;auch im AD angelegt,&lt;/li&gt;
+	&lt;li&gt;und kann mit Passwort im AD angemeldet werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="5"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object exists;&lt;/td&gt;
+		&lt;td colspan="5"&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;ensure&lt;/td&gt;
+		&lt;td class="error"&gt;user&lt;/td&gt;
+		&lt;td class="error"&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td class="error"&gt;can connect to server&lt;/td&gt;
+		&lt;td class="error"&gt;ldaps://192.168.56.22:636&lt;/td&gt;
+		&lt;td class="error"&gt;with password&lt;/td&gt;
+		&lt;td class="error"&gt;p4ssWort&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="7"&gt;&lt;pre&gt;__EXCEPTION__:com.novell.ldapchai.exception.ChaiUnavailableException: unable to create connection: unable to bind to ldaps://192.168.56.22:636 as CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc reason: [LDAP: error code 49 - 80090308: LdapErr: DSID-0C0903C5, comment: AcceptSecurityContext error, data 52e, v23f0 ]
+	at com.novell.ldapchai.provider.ChaiProviderFactory.createProvider(ChaiProviderFactory.java:174) [ldapChai.jar]
+	at com.novell.ldapchai.provider.ChaiProviderFactory$createProvider.call(Unknown Source) [n/a]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116) [groovy-all-2.3.6.jar:2.3.6]
+	at idmfit.LdapOperationScript.userCanConnectToServerWithPassword(LdapOperationScript.groovy:150) [file:/C:/Users/tschroet/MyPrograms/luna/workspace/guhFitNesse/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:121) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:99) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:83) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:106) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:93) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:164) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:134) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:51) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>CreateUser</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_1', instruction='call', instanceName='scriptTableActor', methodName='createObjectWithClassAndAttributes', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER, inetOrgPerson, &lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;sn&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Public&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;givenName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Joe&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;fullName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Joe Public&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_2', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_3', instruction='call', instanceName='scriptTableActor', methodName='setPasswordFor', args=[p4ssWort, cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_4', instruction='call', instanceName='scriptTableActor', methodName='passwordIsCorrectFor', args=[p4ssWort, cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_4</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_2_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='addUserToGroup', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER, cn=aduser,ou=adsync,ou=dienste,o=huebner]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_0', instruction='make', instanceName='decisionTable_3', className='Sleep', args=[15000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_3_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_4_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_2', instruction='call', instanceName='scriptTableActor', methodName='userCanConnectToServerWithPassword', args=[CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc, ldaps://192.168.56.22:636, p4ssWort]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_2</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+      <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>15395</totalRunTimeInMillis>
+  
+</testResults>
+

@@ -1,0 +1,38 @@
+!1 Bearbeiten von User Attributen
+Wird auf dem eDir-User eine Telefonnummer hinterlegt, 
+
+|script|Ldap Operation Script|metatree|
+|add attribute| !-telephoneNumber-! | with value | 555-698741 | to Object | ${metauser} |
+
+wird diese ins AD synchronisiert
+(warte 10 s)
+| Sleep | 10000 |
+
+|script|Ldap Operation Script|ad|
+|ensure| attribute | !-telephoneNumber-! | contains value | 555-698741 | for object | ${aduser} |
+
+!2 Disable User
+Wird der User im eDir disabled 
+|script|Ldap Operation Script|metatree|
+|replace attributes| !-loginDisabled-! | old value | false | with new value | true |on Object | ${metauser} |
+|reject|user account |${metauser} | is enabled |
+
+geschieht dies auch im AD
+(warte 10 s)
+| Sleep | 10000 |
+
+|script|Ldap Operation Script|ad|
+|reject|user account |${aduser}| is enabled |
+
+!2 Enable User
+Wird der User im eDir Enabled 
+|script|Ldap Operation Script|metatree|
+|replace attributes| !-loginDisabled-! | old value | true | with new value | false |on Object | ${metauser} |
+|ensure|user account |${metauser} |is enabled|
+
+geschieht dies auch im AD
+(warte 10 s)
+| Sleep | 10000 |
+
+|script|Ldap Operation Script|ad|
+|ensure|user account |${aduser}| is enabled |

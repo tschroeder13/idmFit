@@ -1,0 +1,8 @@
+
+!3 !-slim:fitnesse.slim.SlimService-!
+|'''Date: '''| 9:16:01 PM (MESZ) on Freitag, Oktober 10, 2014 |
+|'''Test Page: '''|.FitNesse.FullReferenceGuide.UserGuide.WritingAcceptanceTests.SliM.DecisionTable|
+|'''Command: '''| !-"C:\Program Files\Java\jre7\bin\java" -cp C:\Users\tschroet\MyPrograms\luna\workspace\guhFitNesse\dbfit\lib\fitnesse-standalone.jar;classes;lib/*.jar fitnesse.slim.SlimService 8087-! |
+|'''Exit code: '''| 0 |
+|'''Time elapsed: '''| 0.81 seconds |
+

@@ -1,0 +1,1896 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFit.HuebnerActiveDirectoryDriver.EdirctoryEvents</rootPath>
+    <result>
+    <counts>
+      <right>45</right>
+      <wrong>3</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>92187</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.CreateUser"&gt;CreateUser&lt;/a&gt; &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.CreateUser?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h1&gt;Erzeugen eines Users und hinzufügen zur ADUser Gruppe und setzen des PW&lt;/h1&gt;
+&lt;br/&gt;Im eDirectory wird ein User angelegt und das Universal (und damit das Distribution) Password gesetzt&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;create object&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;with class&lt;/td&gt;
+		&lt;td&gt;inetOrgPerson&lt;/td&gt;
+		&lt;td&gt;and attributes&lt;/td&gt;
+		&lt;td&gt;&lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;sn&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Public&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;givenName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Joe&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;fullName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Joe Public&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;create object&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=jsixpack,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;with class&lt;/td&gt;
+		&lt;td&gt;inetOrgPerson&lt;/td&gt;
+		&lt;td&gt;and attributes&lt;/td&gt;
+		&lt;td&gt;&lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;sn&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Sixpack&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;givenName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;John&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;fullName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;John Sicpack&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td colspan="3"&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;cn=jsixpack,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td colspan="3"&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;set password&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;p4ssWort&lt;/td&gt;
+		&lt;td&gt;for&lt;/td&gt;
+		&lt;td colspan="3"&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;set password&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;p4ssWort&lt;/td&gt;
+		&lt;td&gt;for&lt;/td&gt;
+		&lt;td colspan="3"&gt;cn=jsixpack,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;p4ssWort&lt;/td&gt;
+		&lt;td&gt;is correct for&lt;/td&gt;
+		&lt;td colspan="2"&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;p4ssWort&lt;/td&gt;
+		&lt;td&gt;is correct for&lt;/td&gt;
+		&lt;td colspan="2"&gt;cn=jsixpack,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Dieser darf noch nicht ins AD transferiert werden&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Erst wenn im eDir der User zur Gruppe ADSYNC hinzukommt, &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;add user&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;to group&lt;/td&gt;
+		&lt;td&gt;cn=aduser,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;add user&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=jsixpack,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;to group&lt;/td&gt;
+		&lt;td&gt;cn=aduser,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;wird er nach einer Wartezeit von 15 Sekunden&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;15000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+	&lt;li&gt;auch im AD angelegt,&lt;/li&gt;
+	&lt;li&gt;und kann mit Passwort im AD angemeldet werden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="5"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td colspan="4"&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;can connect to server&lt;/td&gt;
+		&lt;td&gt;ldaps://192.168.56.22:636&lt;/td&gt;
+		&lt;td&gt;with password&lt;/td&gt;
+		&lt;td&gt;p4ssWort&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;CN=jsixpack,OU=USER,OU=BR,OU=User,OU=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td colspan="4"&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;cn=jsixpack,OU=USER,OU=BR,OU=User,OU=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;can connect to server&lt;/td&gt;
+		&lt;td&gt;ldaps://192.168.56.22:636&lt;/td&gt;
+		&lt;td&gt;with password&lt;/td&gt;
+		&lt;td&gt;p4ssWort&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.CreateGroup"&gt;CreateGroup&lt;/a&gt; &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.CreateGroup?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h1&gt;Erzeugen einer Gruppe im eDirectory AD Gruppen Container&lt;/h1&gt;
+Im eDirectory wird eine Gruppe im Container ou=GROUPS,ou=ADsync,ou=DIENSTE,o=HUEBNER erzeugt, &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;create object&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+		&lt;td&gt;with class&lt;/td&gt;
+		&lt;td&gt;groupOfNames&lt;/td&gt;
+		&lt;td&gt;and attributes&lt;/td&gt;
+		&lt;td&gt;&lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;description&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Scoped Group&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;die nach kurzer Zeit im Active Directory im Container OU=GROUPS,DC=2k12,DC=tsc erscheint&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;CN=citrone,OU=GROUPS,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Wird hingegen eine Gruppe in einem anderen als dem Gruppen Container erzeugt &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;create object&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=peaches,OU=USER,OU=EU,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;with class&lt;/td&gt;
+		&lt;td&gt;groupOfNames&lt;/td&gt;
+		&lt;td&gt;and attributes&lt;/td&gt;
+		&lt;td&gt;&lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;description&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Unscoped Group&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;wird diese Operation nicht �bertragen&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;cn=peaches,OU=USER,OU=EU,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.GroupOperations"&gt;GroupOperations&lt;/a&gt; &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.GroupOperations?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h1&gt;Attribut einer Gruppe ändern&lt;/h1&gt;
+Wird im eDir ein im Treiberfilter entsprechend gelistetes Attribut geändert&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;add attribute&lt;/td&gt;
+		&lt;td&gt;description&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td&gt;ein paar infos&lt;/td&gt;
+		&lt;td&gt;to Object&lt;/td&gt;
+		&lt;td&gt;cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Wird diese Änderung ins AD übertragen&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="5"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;attribute&lt;/td&gt;
+		&lt;td&gt;description&lt;/td&gt;
+		&lt;td&gt;contains value&lt;/td&gt;
+		&lt;td&gt;ein paar infos&lt;/td&gt;
+		&lt;td&gt;for object&lt;/td&gt;
+		&lt;td&gt;CN=citrone,OU=GROUPS,DC=2k12,DC=tsc&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h1&gt;User in Scope Gruppe aufnehmen&lt;/h1&gt;
+Wird ein User Mitglied einer Gruppe&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;add user&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;to group&lt;/td&gt;
+		&lt;td&gt;cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;add user&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;to group&lt;/td&gt;
+		&lt;td&gt;cn=peaches,OU=USER,OU=EU,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;8000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Wird die Gruppenmitgliedschaft für snychjronisiert Gruppen (scoped) übermittelt&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="5"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;attribute&lt;/td&gt;
+		&lt;td&gt;member&lt;/td&gt;
+		&lt;td&gt;contains value&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;for object&lt;/td&gt;
+		&lt;td&gt;CN=citrone,OU=GROUPS,DC=2k12,DC=tsc&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;attribute&lt;/td&gt;
+		&lt;td&gt;memberOf&lt;/td&gt;
+		&lt;td&gt;contains value&lt;/td&gt;
+		&lt;td&gt;cn=peaches,OU=USER,OU=EU,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;for object&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;h1&gt;User aus Scope Gruppe ausschliessen&lt;/h1&gt;
+Wird einem User eine Gruppenmitgliedschaft entzogen&lt;br/&gt;!!|script|Ldap Operation Script|metatree|&lt;br/&gt;!!|remove user | cn=jpublic,ou=User,ou=BR,o=HUEBNER | from group | cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner |&lt;br/&gt;&lt;br/&gt;!!|Sleep|3000|&lt;br/&gt;&lt;br/&gt;wird dies auch ins AD synchronsiert&lt;br/&gt;!!|script|Ldap Operation Script|ad|&lt;br/&gt;!!|reject| attribute | Member | contains value | CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc | for object | CN=citrone,OU=GROUPS,DC=2k12,DC=tsc |&lt;br/&gt;&lt;br/&gt;&lt;h1&gt;Gruppe umbennen&lt;/h1&gt;
+&lt;br/&gt;Wird im eDir eine Gruppe umbenannt&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;rename entry&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+		&lt;td&gt;to&lt;/td&gt;
+		&lt;td&gt;cn=apple,ou=GROUPS,ou=ADsync,ou=DIENSTE,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;spiegelt sich das auch in der AD Gruppe wieder&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;CN=apple,OU=GROUPS,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;(Aufräumen)&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;rename entry&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=apple,ou=GROUPS,ou=ADsync,ou=DIENSTE,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;to&lt;/td&gt;
+		&lt;td&gt;cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.ModifyUser"&gt;ModifyUser&lt;/a&gt; &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.ModifyUser?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h1&gt;Bearbeiten von User Attributen&lt;/h1&gt;
+Wird auf dem eDir-User eine Telefonnummer hinterlegt, &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;add attribute&lt;/td&gt;
+		&lt;td&gt;telephoneNumber&lt;/td&gt;
+		&lt;td&gt;with value&lt;/td&gt;
+		&lt;td&gt;555-698741&lt;/td&gt;
+		&lt;td&gt;to Object&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;wird diese ins AD synchronisiert&lt;br/&gt;(warte 10 s)&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;10000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="5"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;attribute&lt;/td&gt;
+		&lt;td&gt;telephoneNumber&lt;/td&gt;
+		&lt;td&gt;contains value&lt;/td&gt;
+		&lt;td&gt;555-698741&lt;/td&gt;
+		&lt;td&gt;for object&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h2&gt;Disable User&lt;/h2&gt;
+Wird der User im eDir disabled &lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="6"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;replace attributes&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;loginDisabled&lt;/td&gt;
+		&lt;td&gt;old value&lt;/td&gt;
+		&lt;td&gt;false&lt;/td&gt;
+		&lt;td&gt;with new value&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+		&lt;td&gt;on Object&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user account&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td colspan="5"&gt;is enabled&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;geschieht dies auch im AD&lt;br/&gt;(warte 10 s)&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;10000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user account&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;is enabled&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h2&gt;Enable User&lt;/h2&gt;
+Wird der User im eDir Enabled &lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="6"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;replace attributes&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;loginDisabled&lt;/td&gt;
+		&lt;td&gt;old value&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+		&lt;td&gt;with new value&lt;/td&gt;
+		&lt;td&gt;false&lt;/td&gt;
+		&lt;td&gt;on Object&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user account&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td colspan="5"&gt;is enabled&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;geschieht dies auch im AD&lt;br/&gt;(warte 10 s)&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;10000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user account&lt;/td&gt;
+		&lt;td&gt;CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;is enabled&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.MoveRenameUser"&gt;MoveRenameUser&lt;/a&gt; &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.MoveRenameUser?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h1&gt;User umbenennen&lt;/h1&gt;
+Wird der User im eDir umbenannt&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;rename user&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=jpublic,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;to&lt;/td&gt;
+		&lt;td&gt;cn=jpub,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+wird er auch im AD umbenannt &lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;CN=jpub,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h1&gt;User verschieben&lt;/h1&gt;
+Wird der User im eDir verschoben&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;move user&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=jpub,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;to&lt;/td&gt;
+		&lt;td&gt;cn=jpub,ou=User,ou=EU,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+wird er auch im AD verschoben&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;CN=jpub,ou=User,OU=EU,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.DeleteGroup"&gt;DeleteGroup&lt;/a&gt; &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.DeleteGroup?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h1&gt;Gruppe l�schen&lt;/h1&gt;
+Wenn eine Gruppe im eDirectory gel�scht wird&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;delete object;&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;delete object;&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;cn=peaches,OU=USER,OU=EU,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;cn=peaches,OU=USER,OU=EU,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;wird sie nach kurzer Zeit&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+auch im AD gel�scht&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;CN=citrone,OU=GROUPS,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.DeleteUser"&gt;DeleteUser&lt;/a&gt; &lt;a href="IdmFit.HuebnerActiveDirectoryDriver.DeleteUser?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h1&gt;User l�schen&lt;/h1&gt;
+&lt;br/&gt;Wird ein User aus der ADSync Gruppe ausgeschlossen&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;remove User&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cn=jsixpack,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;from group&lt;/td&gt;
+		&lt;td&gt;cn=aduser,ou=adsync,ou=dienste,o=huebner&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;wird er im AD gelöscht&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;cn=jsixpack,OU=USER,OU=BR,OU=User,OU=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;Wenn der User im eDirectory gelöscht wird&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;metatree&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;delete object;&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;cn=jpub,ou=User,ou=EU,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:com.novell.ldapchai.exception.ChaiUnavailableException: unable to reach any configured server, maximum retries exceeded
+	at com.novell.ldapchai.provider.FailOverWrapper.failOverInvoke(FailOverWrapper.java:191) [ldapChai.jar]
+	at com.novell.ldapchai.provider.FailOverWrapper.invoke(FailOverWrapper.java:134) [ldapChai.jar]
+	at com.sun.proxy.$Proxy3.deleteEntry(Unknown Source) [rt.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.AbstractWrapper.invoker(AbstractWrapper.java:80) [ldapChai.jar]
+	at com.novell.ldapchai.provider.WatchdogWrapper.invoke(WatchdogWrapper.java:219) [ldapChai.jar]
+	at com.sun.proxy.$Proxy3.deleteEntry(Unknown Source) [rt.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at com.novell.ldapchai.provider.StatisticsWrapper.invoke(StatisticsWrapper.java:121) [ldapChai.jar]
+	at com.sun.proxy.$Proxy3.deleteEntry(Unknown Source) [rt.jar]
+	at com.novell.ldapchai.provider.ChaiProvider$deleteEntry$4.call(Unknown Source) [n/a]
+	at idmfit.LdapOperationScript.deleteObject(LdapOperationScript.groovy:39) [file:/C:/Users/tschroet/MyPrograms/luna/workspace/guhFitNesse/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:121) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:99) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:83) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:106) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:93) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:164) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:134) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:51) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;cn=jpub,ou=User,ou=EU,o=HUEBNER&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;note&lt;/td&gt;
+		&lt;td colspan="3"&gt;den anderen User auch aufräumen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;delete object;&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;cn=jsixpack,ou=User,ou=BR,o=HUEBNER&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;wird er nach einer Wartezeit von 10 Sekunden&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Sleep&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;10000&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+auch im AD gelöscht&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Ldap Operation Script&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ad&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;object&lt;/td&gt;
+		&lt;td&gt;CN=jpub,ou=User,OU=EU,ou=User,ou=HUB,DC=2k12,DC=tsc&lt;/td&gt;
+		&lt;td&gt;exists&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>EdirctoryEvents</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_1', instruction='call', instanceName='scriptTableActor', methodName='createObjectWithClassAndAttributes', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER, inetOrgPerson, &lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;sn&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Public&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;givenName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Joe&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;fullName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Joe Public&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_2', instruction='call', instanceName='scriptTableActor', methodName='createObjectWithClassAndAttributes', args=[cn=jsixpack,ou=User,ou=BR,o=HUEBNER, inetOrgPerson, &lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;sn&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Sixpack&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;givenName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;John&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;fullName&lt;/td&gt;
+		&lt;td class="hash_value"&gt;John Sicpack&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_3', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_4', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[cn=jsixpack,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_4</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_5', instruction='call', instanceName='scriptTableActor', methodName='setPasswordFor', args=[p4ssWort, cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_5</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_6', instruction='call', instanceName='scriptTableActor', methodName='setPasswordFor', args=[p4ssWort, cn=jsixpack,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_6</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_7', instruction='call', instanceName='scriptTableActor', methodName='passwordIsCorrectFor', args=[p4ssWort, cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_7</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_8', instruction='call', instanceName='scriptTableActor', methodName='passwordIsCorrectFor', args=[p4ssWort, cn=jsixpack,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_8</instructionId>
+                    <col>0</col>
+                              <row>8</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_2_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='addUserToGroup', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER, cn=aduser,ou=adsync,ou=dienste,o=huebner]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_2_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_2', instruction='call', instanceName='scriptTableActor', methodName='addUserToGroup', args=[cn=jsixpack,ou=User,ou=BR,o=HUEBNER, cn=aduser,ou=adsync,ou=dienste,o=huebner]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_2_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_0', instruction='make', instanceName='decisionTable_3', className='Sleep', args=[15000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_3_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_2', instruction='call', instanceName='scriptTableActor', methodName='userCanConnectToServerWithPassword', args=[CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc, ldaps://192.168.56.22:636, p4ssWort]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_3', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=jsixpack,OU=USER,OU=BR,OU=User,OU=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_4', instruction='call', instanceName='scriptTableActor', methodName='userCanConnectToServerWithPassword', args=[cn=jsixpack,OU=USER,OU=BR,OU=User,OU=HUB,DC=2k12,DC=tsc, ldaps://192.168.56.22:636, p4ssWort]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_4</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_1', instruction='call', instanceName='scriptTableActor', methodName='createObjectWithClassAndAttributes', args=[cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner, groupOfNames, &lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;description&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Scoped Group&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_6_0', instruction='make', instanceName='decisionTable_6', className='Sleep', args=[5000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_6_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_7_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=citrone,OU=GROUPS,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_7_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_8_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_1', instruction='call', instanceName='scriptTableActor', methodName='createObjectWithClassAndAttributes', args=[cn=peaches,OU=USER,OU=EU,o=HUEBNER, groupOfNames, &lt;table class="hash_table"&gt;
+	&lt;tr class="hash_row"&gt;
+		&lt;td class="hash_key"&gt;description&lt;/td&gt;
+		&lt;td class="hash_value"&gt;Unscoped Group&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_8_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_9_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_9_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[cn=peaches,OU=USER,OU=EU,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_9_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_10_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_10_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_10_1', instruction='call', instanceName='scriptTableActor', methodName='addAttributeWithValueToObject', args=[description, ein paar infos, cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_10_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_11_0', instruction='make', instanceName='decisionTable_11', className='Sleep', args=[3000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_11_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_12_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_1', instruction='call', instanceName='scriptTableActor', methodName='attributeContainsValueForObject', args=[description, ein paar infos, CN=citrone,OU=GROUPS,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_12_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_13_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_13_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_13_1', instruction='call', instanceName='scriptTableActor', methodName='addUserToGroup', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER, cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_13_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_13_2', instruction='call', instanceName='scriptTableActor', methodName='addUserToGroup', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER, cn=peaches,OU=USER,OU=EU,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_13_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_14_0', instruction='make', instanceName='decisionTable_14', className='Sleep', args=[8000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_14_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_15_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_15_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_15_1', instruction='call', instanceName='scriptTableActor', methodName='attributeContainsValueForObject', args=[member, CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc, CN=citrone,OU=GROUPS,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_15_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_15_2', instruction='call', instanceName='scriptTableActor', methodName='attributeContainsValueForObject', args=[memberOf, cn=peaches,OU=USER,OU=EU,ou=User,ou=HUB,DC=2k12,DC=tsc, CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_15_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_16_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_16_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_16_1', instruction='call', instanceName='scriptTableActor', methodName='renameEntryTo', args=[cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner, cn=apple,ou=GROUPS,ou=ADsync,ou=DIENSTE,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_16_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_17_0', instruction='make', instanceName='decisionTable_17', className='Sleep', args=[3000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_17_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_18_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_18_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_18_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=apple,OU=GROUPS,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_18_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_19_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_19_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_19_1', instruction='call', instanceName='scriptTableActor', methodName='renameEntryTo', args=[cn=apple,ou=GROUPS,ou=ADsync,ou=DIENSTE,o=HUEBNER, cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_19_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_20_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_20_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_20_1', instruction='call', instanceName='scriptTableActor', methodName='addAttributeWithValueToObject', args=[telephoneNumber, 555-698741, cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_20_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_21_0', instruction='make', instanceName='decisionTable_21', className='Sleep', args=[10000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_21_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_22_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_22_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_22_1', instruction='call', instanceName='scriptTableActor', methodName='attributeContainsValueForObject', args=[telephoneNumber, 555-698741, CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_22_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_23_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_23_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_23_1', instruction='call', instanceName='scriptTableActor', methodName='replaceAttributesOldValueWithNewValueOnObject', args=[loginDisabled, false, true, cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_23_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_23_2', instruction='call', instanceName='scriptTableActor', methodName='userAccountIsEnabled', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_23_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_24_0', instruction='make', instanceName='decisionTable_24', className='Sleep', args=[10000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_24_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_25_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_25_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_25_1', instruction='call', instanceName='scriptTableActor', methodName='userAccountIsEnabled', args=[CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_25_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_26_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_26_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_26_1', instruction='call', instanceName='scriptTableActor', methodName='replaceAttributesOldValueWithNewValueOnObject', args=[loginDisabled, true, false, cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_26_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_26_2', instruction='call', instanceName='scriptTableActor', methodName='userAccountIsEnabled', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_26_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_27_0', instruction='make', instanceName='decisionTable_27', className='Sleep', args=[10000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_27_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_28_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_28_1', instruction='call', instanceName='scriptTableActor', methodName='userAccountIsEnabled', args=[CN=jpublic,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_28_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_29_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_29_1', instruction='call', instanceName='scriptTableActor', methodName='renameUserTo', args=[cn=jpublic,ou=User,ou=BR,o=HUEBNER, cn=jpub,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_29_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_30_0', instruction='make', instanceName='decisionTable_30', className='Sleep', args=[5000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_30_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_31_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_31_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_31_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=jpub,ou=User,OU=BR,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_31_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_32_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_32_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_32_1', instruction='call', instanceName='scriptTableActor', methodName='moveUserTo', args=[cn=jpub,ou=User,ou=BR,o=HUEBNER, cn=jpub,ou=User,ou=EU,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_32_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_33_0', instruction='make', instanceName='decisionTable_33', className='Sleep', args=[5000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_33_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_34_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_34_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_34_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=jpub,ou=User,OU=EU,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_34_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_35_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_35_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_35_1', instruction='call', instanceName='scriptTableActor', methodName='deleteObject', args=[cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_35_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_35_2', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[cn=citrone,ou=GROUPS,ou=adsync,ou=dienste,o=huebner]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_35_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_35_3', instruction='call', instanceName='scriptTableActor', methodName='deleteObject', args=[cn=peaches,OU=USER,OU=EU,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_35_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_35_4', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[cn=peaches,OU=USER,OU=EU,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_35_4</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_36_0', instruction='make', instanceName='decisionTable_36', className='Sleep', args=[3000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_36_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_37_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_37_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_37_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=citrone,OU=GROUPS,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_37_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_38_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_38_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_38_1', instruction='call', instanceName='scriptTableActor', methodName='removeUserFromGroup', args=[cn=jsixpack,ou=User,ou=BR,o=HUEBNER, cn=aduser,ou=adsync,ou=dienste,o=huebner]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_38_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_39_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_39_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_39_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[cn=jsixpack,OU=USER,OU=BR,OU=User,OU=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_39_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_40_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[metatree]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_40_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_40_1', instruction='call', instanceName='scriptTableActor', methodName='deleteObject', args=[cn=jpub,ou=User,ou=EU,o=HUEBNER]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_40_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_40_2', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[cn=jpub,ou=User,ou=EU,o=HUEBNER]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_40_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_40_3', instruction='call', instanceName='scriptTableActor', methodName='deleteObject', args=[cn=jsixpack,ou=User,ou=BR,o=HUEBNER]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_40_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_41_0', instruction='make', instanceName='decisionTable_41', className='Sleep', args=[10000]}</instruction>
+        <slimResult>pass(Sleep)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_41_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Sleep</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_42_0', instruction='make', instanceName='scriptTableActor', className='LdapOperationScript', args=[ad]}</instruction>
+        <slimResult>pass(Ldap Operation Script)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_42_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Operation Script</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_42_1', instruction='call', instanceName='scriptTableActor', methodName='objectExists', args=[CN=jpub,ou=User,OU=EU,ou=User,ou=HUB,DC=2k12,DC=tsc]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_42_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+      <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>92188</totalRunTimeInMillis>
+  
+</testResults>
+

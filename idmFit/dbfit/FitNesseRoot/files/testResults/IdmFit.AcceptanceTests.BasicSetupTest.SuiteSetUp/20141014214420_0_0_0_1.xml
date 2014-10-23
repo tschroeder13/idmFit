@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140915</FitNesseVersion>
+  <rootPath>IdmFit.AcceptanceTests.BasicSetupTest.SuiteSetUp</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>37066</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Imports&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;idmfit&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;!define MANUALLY_START_TEST_RUNNER_ON_DEBUG=true&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class="meta"&gt;variable defined: metatree=metatree&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;variable defined: ad=ad&lt;/span&gt;
+ &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;Ldap Connection Set Up&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;connection name&lt;/td&gt;
+		&lt;td&gt;bind username&lt;/td&gt;
+		&lt;td&gt;bind password&lt;/td&gt;
+		&lt;td&gt;server URL&lt;/td&gt;
+		&lt;td&gt;connect?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;metatree&lt;/td&gt;
+		&lt;td class="error"&gt;cn=admin,ou=sa,o=system&lt;/td&gt;
+		&lt;td class="error"&gt;ENC(w+QGmD454foZSDwD+uVAfQ==)&lt;/td&gt;
+		&lt;td class="error"&gt;ldaps://192.168.56.11:636&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="5"&gt;&lt;pre&gt;__EXCEPTION__:com.novell.ldapchai.exception.ChaiUnavailableException: unable to create connection: unable to connect to any configured ldap url, last error: unable to bind to ldaps://192.168.56.11:636 as cn=admin,ou=sa,o=system reason: CommunicationException (192.168.56.11:636; sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target)
+	at com.novell.ldapchai.provider.ChaiProviderFactory.createProvider(ChaiProviderFactory.java:174) [ldapChai.jar]
+	at com.novell.ldapchai.provider.ChaiProviderFactory.createProvider(ChaiProviderFactory.java:136) [ldapChai.jar]
+	at com.novell.ldapchai.provider.ChaiProviderFactory$createProvider.call(Unknown Source) [n/a]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:124) [groovy-all-2.3.6.jar:2.3.6]
+	at idmfit.LdapConnection.&amp;lt;init&amp;gt;(LdapConnection.groovy:34) [file:/C:/Users/tschroet/MyPrograms/luna/workspace/guhFitNesse/bin/]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.7.0_65]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:102) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:182) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198) [groovy-all-2.3.6.jar:2.3.6]
+	at idmfit.LdapConnection.addConnection(LdapConnection.groovy:58) [file:/C:/Users/tschroet/MyPrograms/luna/workspace/guhFitNesse/bin/]
+	at idmfit.LdapConnection$addConnection.call(Unknown Source) [n/a]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108) [groovy-all-2.3.6.jar:2.3.6]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128) [groovy-all-2.3.6.jar:2.3.6]
+	at idmfit.LdapConnectionSetUp.connect(LdapConnectionSetUp.groovy:22) [file:/C:/Users/tschroet/MyPrograms/luna/workspace/guhFitNesse/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.7.0_65]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:121) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:99) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:106) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:93) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:164) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:172) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:134) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:65) [fitnesse-standalone-20140903.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:51) [fitnesse-standalone-20140903.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SuiteSetUp</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='fitnesse.fixtures'}</instruction>
+        <slimResult>pass(fitnesse.fixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='idmfit'}</instruction>
+        <slimResult>pass(idmfit)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>idmfit</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='LdapConnectionSetUp', args=[]}</instruction>
+        <slimResult>pass(Ldap Connection Set Up)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Ldap Connection Set Up</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setConnectionName', args=[metatree]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setBindUsername', args=[cn=admin,ou=sa,o=system]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setBindPassword', args=[ENC(w+QGmD454foZSDwD+uVAfQ==)]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='setServerURL', args=[ldaps://192.168.56.11:636]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='connect', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_9</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+      <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>37066</totalRunTimeInMillis>
+  
+</testResults>
+
