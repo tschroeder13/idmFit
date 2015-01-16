@@ -19,7 +19,7 @@ public class FitnesseStarter {
     public static void start() throws Exception {
     	FitNesseMain fMain = new FitNesseMain();
     	contextConfigurator = ContextConfigurator.systemDefaults();
-    	contextConfigurator.withPort(8080);
+    	contextConfigurator.withPort(80);
     	contextConfigurator.withRootPath("./dbfit");
     	fMain.launchFitNesse(contextConfigurator);
     	

@@ -1,6 +1,0 @@
-!2 !-IdmFit-! Reference 
-von Tobias Schröder. 2014
-
-This subwiki is !-IdmFit-! reference.  
-
-!contents -R2 -g -p -f -h

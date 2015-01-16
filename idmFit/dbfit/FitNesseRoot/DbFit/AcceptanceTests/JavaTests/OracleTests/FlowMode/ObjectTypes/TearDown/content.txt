@@ -1,3 +1,0 @@
-!|Execute|drop table persons|
-
-!|Execute|drop type person_type|

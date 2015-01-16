@@ -1,5 +1,0 @@
-!!define MANUALLY_START_TEST_RUNNER_ON_DEBUG {true}
-!!define SLIM_PORT {8000}
-
-!1 Test suite X
-!contents -R2 -g -p -f -h
