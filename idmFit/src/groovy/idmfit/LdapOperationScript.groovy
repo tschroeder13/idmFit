@@ -201,6 +201,6 @@ class LdapOperationScript {
 	}
 	
 	def evaluate(String command){
-		Eval.me(command)
+		new GroovyShell().evaluate(command)
 	}
 }

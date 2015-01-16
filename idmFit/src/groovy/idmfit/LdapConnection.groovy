@@ -27,12 +27,13 @@ class LdapConnection {
 		props.put("user", bindUsername);
 		props.put("password", new PropertiesLoader().parseValue(bindPassword));
 
-		provider = ChaiProviderFactory.createProvider(
-				new ChaiConfiguration(
+		def conf = new ChaiConfiguration(
 						serverURL, props.getProperty("user"),
 						props.getProperty("password")
-					).setSetting(ChaiSetting.PROMISCUOUS_SSL, "true")
-				)
+					)
+		conf.setSetting(ChaiSetting.PROMISCUOUS_SSL, "true")
+		conf.setSetting(ChaiSetting.PROVIDER_IMPLEMENTATION, "com.novell.ldapchai.provider.JNDIProviderImpl")
+		provider = ChaiProviderFactory.createProvider(conf)
 		println provider.toString()
 	}
 	public static Map getConnections() {
